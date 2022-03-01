@@ -1,0 +1,14 @@
+menu "Device Drivers"
+
+rsource "uwb/Kconfig"
+rsource "led_strip/Kconfig"
+rsource "eeprom/Kconfig"
+
+menuconfig COMP_STM32
+    bool "STM32 MCU comparator driver"
+    select USE_STM32_LL_COMP
+    depends on SOC_FAMILY_STM32
+    help
+      Enable comparator support on the STM32 family of processors.
+
+endmenu

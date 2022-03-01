@@ -1,0 +1,9 @@
+menu "Sub Systems and OS Services"
+
+rsource "meshposition/Kconfig"
+
+rsource "cobs/Kconfig"
+
+rsource "led_utils/Kconfig"
+
+endmenu

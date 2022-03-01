@@ -1,0 +1,3 @@
+add_subdirectory_ifdef(CONFIG_DW1000 uwb)
+add_subdirectory_ifdef(CONFIG_LED_STRIP led_strip)
+add_subdirectory_ifdef(CONFIG_EEPROM eeprom)

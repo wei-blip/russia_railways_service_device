@@ -1,0 +1,23 @@
+# EEPROM driver configuration options
+
+# Copyright (c) 2019 Vestas Wind Systems A/S
+# SPDX-License-Identifier: Apache-2.0
+
+menuconfig EEPROM
+	bool "EEPROM hardware support"
+	help
+	  Enable support for EEPROM hardware.
+
+if EEPROM
+
+module = EEPROM
+module-str = eeprom
+source "subsys/logging/Kconfig.template.log_config"
+
+config EEPROM_ST25DV
+	bool "ST25DV NFC as EEPROM"
+	depends on I2C
+	help
+	  Enable support for ST25DV NFC tag for use as an EEPROM.
+
+endif # EEPROM

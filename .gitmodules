@@ -1,0 +1,3 @@
+[submodule "rts-zephyr"]
+	path = rts-zephyr
+	url = git@git.rts-iot.ru:fw/rts-zephyr.git
