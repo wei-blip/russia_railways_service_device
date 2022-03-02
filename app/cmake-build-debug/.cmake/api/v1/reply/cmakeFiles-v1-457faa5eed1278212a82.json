@@ -7841,6 +7841,10 @@
 		},
 		{
 			"isExternal" : true,
+			"path" : "/home/rts/zephyr-rts-master/zephyr/drivers/entropy/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
 			"path" : "/home/rts/zephyr-rts-master/zephyr/drivers/timer/CMakeLists.txt"
 		},
 		{

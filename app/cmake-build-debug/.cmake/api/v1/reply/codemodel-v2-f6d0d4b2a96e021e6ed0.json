@@ -27,13 +27,13 @@
 						12,
 						13,
 						16,
-						29,
 						30,
-						36,
-						41,
-						45,
-						49,
-						60
+						31,
+						37,
+						42,
+						46,
+						50,
+						62
 					]
 				},
 				{
@@ -46,13 +46,12 @@
 						20,
 						21,
 						40,
-						55,
 						56,
 						57,
-						60,
+						58,
 						61,
 						62,
-						67,
+						63,
 						68,
 						69,
 						70,
@@ -60,15 +59,15 @@
 						72,
 						73,
 						74,
-						76,
+						75,
 						77,
 						78,
 						79,
 						80,
 						81,
-						84,
+						82,
 						85,
-						88,
+						86,
 						89,
 						90,
 						91,
@@ -90,10 +89,11 @@
 						107,
 						108,
 						109,
-						112,
+						110,
 						113,
 						114,
-						115
+						115,
+						116
 					],
 					"jsonFile" : "directory-zephyr-Debug-172679a89ac64102f083.json",
 					"minimumCMakeVersion" : 
@@ -106,21 +106,21 @@
 					"targetIndexes" : 
 					[
 						17,
-						33,
-						37,
+						34,
 						38,
 						39,
-						42,
+						40,
 						43,
 						44,
-						48,
-						52,
+						45,
+						49,
 						54,
-						55,
 						56,
 						57,
 						58,
-						59
+						59,
+						60,
+						61
 					]
 				},
 				{
@@ -152,7 +152,7 @@
 					"targetIndexes" : 
 					[
 						5,
-						31
+						32
 					]
 				},
 				{
@@ -266,7 +266,7 @@
 					"source" : "/home/rts/zephyr-rts-master/zephyr/lib/libc/newlib",
 					"targetIndexes" : 
 					[
-						34
+						35
 					]
 				},
 				{
@@ -281,7 +281,7 @@
 					"source" : "/home/rts/zephyr-rts-master/zephyr/lib/posix",
 					"targetIndexes" : 
 					[
-						35
+						36
 					]
 				},
 				{
@@ -345,7 +345,7 @@
 					"source" : "/home/rts/zephyr-rts-master/zephyr/soc/arm/common/cortex_m",
 					"targetIndexes" : 
 					[
-						51
+						52
 					]
 				},
 				{
@@ -503,7 +503,11 @@
 					},
 					"parentIndex" : 21,
 					"projectIndex" : 1,
-					"source" : "/home/rts/zephyr-rts-master/zephyr/subsys/random"
+					"source" : "/home/rts/zephyr-rts-master/zephyr/subsys/random",
+					"targetIndexes" : 
+					[
+						53
+					]
 				},
 				{
 					"build" : "zephyr/subsys/storage",
@@ -647,7 +651,8 @@
 						51,
 						52,
 						53,
-						54
+						54,
+						55
 					],
 					"jsonFile" : "directory-zephyr.drivers-Debug-481349348ccf255308ab.json",
 					"minimumCMakeVersion" : 
@@ -670,7 +675,7 @@
 					"source" : "/home/rts/zephyr-rts-master/zephyr/drivers/interrupt_controller",
 					"targetIndexes" : 
 					[
-						22
+						23
 					]
 				},
 				{
@@ -774,7 +779,7 @@
 					"source" : "/home/rts/zephyr-rts-master/zephyr/drivers/gpio",
 					"targetIndexes" : 
 					[
-						21
+						22
 					]
 				},
 				{
@@ -789,7 +794,7 @@
 					"source" : "/home/rts/zephyr-rts-master/zephyr/drivers/spi",
 					"targetIndexes" : 
 					[
-						25
+						26
 					]
 				},
 				{
@@ -804,7 +809,7 @@
 					"source" : "/home/rts/zephyr-rts-master/zephyr/drivers/lora",
 					"targetIndexes" : 
 					[
-						40
+						41
 					]
 				},
 				{
@@ -819,7 +824,22 @@
 					"source" : "/home/rts/zephyr-rts-master/zephyr/drivers/serial",
 					"targetIndexes" : 
 					[
-						24
+						25
+					]
+				},
+				{
+					"build" : "zephyr/drivers/entropy",
+					"jsonFile" : "directory-zephyr.drivers.entropy-Debug-9d7a7238f33e09caf499.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 40,
+					"projectIndex" : 1,
+					"source" : "/home/rts/zephyr-rts-master/zephyr/drivers/entropy",
+					"targetIndexes" : 
+					[
+						21
 					]
 				},
 				{
@@ -834,7 +854,7 @@
 					"source" : "/home/rts/zephyr-rts-master/zephyr/drivers/timer",
 					"targetIndexes" : 
 					[
-						26
+						27
 					]
 				},
 				{
@@ -849,7 +869,7 @@
 					"source" : "/home/rts/zephyr-rts-master/zephyr/drivers/pinctrl",
 					"targetIndexes" : 
 					[
-						23
+						24
 					]
 				},
 				{
@@ -878,7 +898,7 @@
 					"build" : "modules/cmsis",
 					"childIndexes" : 
 					[
-						58
+						59
 					],
 					"jsonFile" : "directory-modules.cmsis-Debug-d1344dd869a1b5f2b510.json",
 					"minimumCMakeVersion" : 
@@ -893,14 +913,14 @@
 					"build" : "modules/cmsis/CMSIS",
 					"childIndexes" : 
 					[
-						59
+						60
 					],
 					"jsonFile" : "directory-modules.cmsis.CMSIS-Debug-86ae83b1b435822723a9.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 57,
+					"parentIndex" : 58,
 					"projectIndex" : 1,
 					"source" : "/home/rts/zephyr-rts-master/modules/hal/cmsis/CMSIS"
 				},
@@ -911,7 +931,7 @@
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 58,
+					"parentIndex" : 59,
 					"projectIndex" : 1,
 					"source" : "/home/rts/zephyr-rts-master/modules/hal/cmsis/CMSIS/Core"
 				},
@@ -941,7 +961,7 @@
 					"build" : "modules/atmel",
 					"childIndexes" : 
 					[
-						63
+						64
 					],
 					"jsonFile" : "directory-modules.atmel-Debug-fe8b661c9648ee054d82.json",
 					"minimumCMakeVersion" : 
@@ -956,14 +976,14 @@
 					"build" : "modules/atmel/asf",
 					"childIndexes" : 
 					[
-						64
+						65
 					],
 					"jsonFile" : "directory-modules.atmel.asf-Debug-5720250139dfe32e00c0.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 62,
+					"parentIndex" : 63,
 					"projectIndex" : 1,
 					"source" : "/home/rts/zephyr-rts-master/modules/hal/atmel/asf"
 				},
@@ -971,14 +991,14 @@
 					"build" : "modules/atmel/asf/common",
 					"childIndexes" : 
 					[
-						65
+						66
 					],
 					"jsonFile" : "directory-modules.atmel.asf.common-Debug-08d238974bdc866c532d.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 63,
+					"parentIndex" : 64,
 					"projectIndex" : 1,
 					"source" : "/home/rts/zephyr-rts-master/modules/hal/atmel/asf/common"
 				},
@@ -986,14 +1006,14 @@
 					"build" : "modules/atmel/asf/common/components",
 					"childIndexes" : 
 					[
-						66
+						67
 					],
 					"jsonFile" : "directory-modules.atmel.asf.common.components-Debug-d6913ff64030e2edc3d1.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 64,
+					"parentIndex" : 65,
 					"projectIndex" : 1,
 					"source" : "/home/rts/zephyr-rts-master/modules/hal/atmel/asf/common/components"
 				},
@@ -1004,7 +1024,7 @@
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 65,
+					"parentIndex" : 66,
 					"projectIndex" : 1,
 					"source" : "/home/rts/zephyr-rts-master/modules/hal/atmel/asf/common/components/wifi"
 				},
@@ -1089,7 +1109,7 @@
 					"build" : "modules/hal_nxp",
 					"childIndexes" : 
 					[
-						75
+						76
 					],
 					"jsonFile" : "directory-modules.hal_nxp-Debug-44ffbba6f20451591822.json",
 					"minimumCMakeVersion" : 
@@ -1107,7 +1127,7 @@
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 74,
+					"parentIndex" : 75,
 					"projectIndex" : 1,
 					"source" : "/home/rts/zephyr-rts-master/modules/hal/nxp"
 				},
@@ -1170,7 +1190,7 @@
 					"build" : "modules/stm32",
 					"childIndexes" : 
 					[
-						82
+						83
 					],
 					"jsonFile" : "directory-modules.stm32-Debug-c394c4380bb099d105ae.json",
 					"minimumCMakeVersion" : 
@@ -1185,14 +1205,14 @@
 					"build" : "modules/stm32/stm32cube",
 					"childIndexes" : 
 					[
-						83
+						84
 					],
 					"jsonFile" : "directory-modules.stm32.stm32cube-Debug-129d692845a847d53bfe.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 81,
+					"parentIndex" : 82,
 					"projectIndex" : 1,
 					"source" : "/home/rts/zephyr-rts-master/modules/hal/stm32/stm32cube",
 					"targetIndexes" : 
@@ -1207,7 +1227,7 @@
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 82,
+					"parentIndex" : 83,
 					"projectIndex" : 1,
 					"source" : "/home/rts/zephyr-rts-master/modules/hal/stm32/stm32cube/stm32l4xx"
 				},
@@ -1226,7 +1246,7 @@
 					"build" : "modules/ti",
 					"childIndexes" : 
 					[
-						86
+						87
 					],
 					"jsonFile" : "directory-modules.ti-Debug-d2aeead58ffed04b7f44.json",
 					"minimumCMakeVersion" : 
@@ -1241,14 +1261,14 @@
 					"build" : "modules/ti/simplelink",
 					"childIndexes" : 
 					[
-						87
+						88
 					],
 					"jsonFile" : "directory-modules.ti.simplelink-Debug-b2f5c4a2d45ba6b78f8b.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 85,
+					"parentIndex" : 86,
 					"projectIndex" : 1,
 					"source" : "/home/rts/zephyr-rts-master/modules/hal/ti/simplelink"
 				},
@@ -1259,7 +1279,7 @@
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 86,
+					"parentIndex" : 87,
 					"projectIndex" : 1,
 					"source" : "/home/rts/zephyr-rts-master/modules/hal/ti/simplelink/source/ti/devices"
 				},
@@ -1498,8 +1518,8 @@
 					"build" : "modules/rts-zephyr",
 					"childIndexes" : 
 					[
-						110,
-						111
+						111,
+						112
 					],
 					"jsonFile" : "directory-modules.rts-zephyr-Debug-aa973aa47ca5372cc1e2.json",
 					"minimumCMakeVersion" : 
@@ -1517,7 +1537,7 @@
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 109,
+					"parentIndex" : 110,
 					"projectIndex" : 1,
 					"source" : "/home/rts/tmp/projects/beacon_project_rzd/service_device/modules/rts-zephyr/drivers"
 				},
@@ -1528,7 +1548,7 @@
 					{
 						"string" : "3.20.0"
 					},
-					"parentIndex" : 109,
+					"parentIndex" : 110,
 					"projectIndex" : 1,
 					"source" : "/home/rts/tmp/projects/beacon_project_rzd/service_device/modules/rts-zephyr/subsys"
 				},
@@ -1544,7 +1564,7 @@
 					"source" : "/home/rts/zephyr-rts-master/zephyr/kernel",
 					"targetIndexes" : 
 					[
-						32
+						33
 					]
 				},
 				{
@@ -1562,7 +1582,7 @@
 						7,
 						14,
 						15,
-						27
+						28
 					]
 				},
 				{
@@ -1578,8 +1598,8 @@
 					"targetIndexes" : 
 					[
 						9,
-						50,
-						53
+						51,
+						55
 					]
 				},
 				{
@@ -1594,9 +1614,9 @@
 					"source" : "/home/rts/zephyr-rts-master/zephyr/cmake/reports",
 					"targetIndexes" : 
 					[
-						28,
-						46,
-						47
+						29,
+						47,
+						48
 					]
 				}
 			],
@@ -1623,13 +1643,13 @@
 						12,
 						13,
 						16,
-						29,
 						30,
-						36,
-						41,
-						45,
-						49,
-						60
+						31,
+						37,
+						42,
+						46,
+						50,
+						62
 					]
 				},
 				{
@@ -1694,7 +1714,7 @@
 						53,
 						54,
 						55,
-						57,
+						56,
 						58,
 						59,
 						60,
@@ -1752,7 +1772,8 @@
 						112,
 						113,
 						114,
-						115
+						115,
+						116
 					],
 					"name" : "Zephyr-Kernel",
 					"parentIndex" : 0,
@@ -1779,22 +1800,22 @@
 						26,
 						27,
 						28,
-						31,
+						29,
 						32,
 						33,
 						34,
 						35,
-						37,
+						36,
 						38,
 						39,
 						40,
-						42,
+						41,
 						43,
 						44,
-						46,
+						45,
 						47,
 						48,
-						50,
+						49,
 						51,
 						52,
 						53,
@@ -1803,13 +1824,15 @@
 						56,
 						57,
 						58,
-						59
+						59,
+						60,
+						61
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						56
+						57
 					],
 					"name" : "civetweb",
 					"parentIndex" : 1
@@ -1818,9 +1841,9 @@
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 82,
+					"directoryIndex" : 83,
 					"id" : "..__modules__hal__stm32__stm32cube::@107a100e70a5713a6426",
-					"jsonFile" : "target-..__modules__hal__stm32__stm32cube-Debug-76ec5de41962c70d9201.json",
+					"jsonFile" : "target-..__modules__hal__stm32__stm32cube-Debug-2f1fb3e8d98bda41fdc2.json",
 					"name" : "..__modules__hal__stm32__stm32cube",
 					"projectIndex" : 1
 				},
@@ -1867,7 +1890,7 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 113,
+					"directoryIndex" : 114,
 					"id" : "attach::@a247f7a48b0aa9995de3",
 					"jsonFile" : "target-attach-Debug-46e923298a421d98bb12.json",
 					"name" : "attach",
@@ -1881,7 +1904,7 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 114,
+					"directoryIndex" : 115,
 					"id" : "boards::@94b61706647a07df483a",
 					"jsonFile" : "target-boards-Debug-bd3a61de8847feb1d2cb.json",
 					"name" : "boards",
@@ -1916,14 +1939,14 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 113,
+					"directoryIndex" : 114,
 					"id" : "debug::@a247f7a48b0aa9995de3",
 					"jsonFile" : "target-debug-Debug-054c8476e6e9663e4b76.json",
 					"name" : "debug",
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 113,
+					"directoryIndex" : 114,
 					"id" : "debugserver::@a247f7a48b0aa9995de3",
 					"jsonFile" : "target-debugserver-Debug-e726f7b43682b7ba8fd8.json",
 					"name" : "debugserver",
@@ -1965,6 +1988,13 @@
 					"projectIndex" : 1
 				},
 				{
+					"directoryIndex" : 53,
+					"id" : "drivers__entropy::@e00872c89ca6c5bd3fc0",
+					"jsonFile" : "target-drivers__entropy-Debug-2b1257b21ec84aeeac71.json",
+					"name" : "drivers__entropy",
+					"projectIndex" : 1
+				},
+				{
 					"directoryIndex" : 49,
 					"id" : "drivers__gpio::@f8009383a952b2e6d5b0",
 					"jsonFile" : "target-drivers__gpio-Debug-e35075e2687dc7617686.json",
@@ -1979,7 +2009,7 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 54,
+					"directoryIndex" : 55,
 					"id" : "drivers__pinctrl::@762029cc579c68d25071",
 					"jsonFile" : "target-drivers__pinctrl-Debug-e3b0f8c7206c733390e6.json",
 					"name" : "drivers__pinctrl",
@@ -2000,21 +2030,21 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 53,
+					"directoryIndex" : 54,
 					"id" : "drivers__timer::@d6d9b8697bc2d7d4441f",
 					"jsonFile" : "target-drivers__timer-Debug-7afb6f44d6b44bb33420.json",
 					"name" : "drivers__timer",
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 113,
+					"directoryIndex" : 114,
 					"id" : "flash::@a247f7a48b0aa9995de3",
 					"jsonFile" : "target-flash-Debug-b4747c4674323981f7b3.json",
 					"name" : "flash",
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 115,
+					"directoryIndex" : 116,
 					"id" : "footprint::@ca7f08113abe6c9ed8d3",
 					"jsonFile" : "target-footprint-Debug-6ba6652446897b64fc8a.json",
 					"name" : "footprint",
@@ -2042,7 +2072,7 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 112,
+					"directoryIndex" : 113,
 					"id" : "kernel::@84e783bf488a9f887759",
 					"jsonFile" : "target-kernel-Debug-56e468f2bc7a6ce644eb.json",
 					"name" : "kernel",
@@ -2140,14 +2170,14 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 115,
+					"directoryIndex" : 116,
 					"id" : "ram_report::@ca7f08113abe6c9ed8d3",
 					"jsonFile" : "target-ram_report-Debug-70b82952374c00ec5398.json",
 					"name" : "ram_report",
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 115,
+					"directoryIndex" : 116,
 					"id" : "rom_report::@ca7f08113abe6c9ed8d3",
 					"jsonFile" : "target-rom_report-Debug-ff4e4a63184eda4b1449.json",
 					"name" : "rom_report",
@@ -2168,7 +2198,7 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 114,
+					"directoryIndex" : 115,
 					"id" : "shields::@94b61706647a07df483a",
 					"jsonFile" : "target-shields-Debug-314b057171a97b1f9585.json",
 					"name" : "shields",
@@ -2182,6 +2212,13 @@
 					"projectIndex" : 1
 				},
 				{
+					"directoryIndex" : 28,
+					"id" : "subsys__random::@cedacd108475236dd318",
+					"jsonFile" : "target-subsys__random-Debug-3cfbcb95a8886d5d28b2.json",
+					"name" : "subsys__random",
+					"projectIndex" : 1
+				},
+				{
 					"directoryIndex" : 1,
 					"id" : "syscall_list_h_target::@d36e55b69c1b90fb26b2",
 					"jsonFile" : "target-syscall_list_h_target-Debug-18b158aeb4c0d853790f.json",
@@ -2189,7 +2226,7 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 114,
+					"directoryIndex" : 115,
 					"id" : "usage::@94b61706647a07df483a",
 					"jsonFile" : "target-usage-Debug-97250459a2b93295a56c.json",
 					"name" : "usage",
@@ -2212,7 +2249,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "zephyr_final::@d36e55b69c1b90fb26b2",
-					"jsonFile" : "target-zephyr_final-Debug-937aee79f1718cd0137c.json",
+					"jsonFile" : "target-zephyr_final-Debug-670db8144bc0586add5c.json",
 					"name" : "zephyr_final",
 					"projectIndex" : 1
 				},
@@ -2226,14 +2263,14 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "zephyr_pre0::@d36e55b69c1b90fb26b2",
-					"jsonFile" : "target-zephyr_pre0-Debug-6390cbbe91a2c45be781.json",
+					"jsonFile" : "target-zephyr_pre0-Debug-5349fd3da883feddf49a.json",
 					"name" : "zephyr_pre0",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "zephyr_pre1::@d36e55b69c1b90fb26b2",
-					"jsonFile" : "target-zephyr_pre1-Debug-6fa5f0c08664bb156327.json",
+					"jsonFile" : "target-zephyr_pre1-Debug-e8ae25bb3355ac198a2b.json",
 					"name" : "zephyr_pre1",
 					"projectIndex" : 1
 				},

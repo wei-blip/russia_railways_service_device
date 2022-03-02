@@ -329,7 +329,8 @@
 				3,
 				4,
 				5,
-				6
+				6,
+				7
 			]
 		}
 	],
@@ -372,7 +373,8 @@
 				3,
 				4,
 				5,
-				6
+				6,
+				7
 			]
 		}
 	],
@@ -406,6 +408,12 @@
 			"backtrace" : 8,
 			"compileGroupIndex" : 0,
 			"path" : "/home/rts/zephyr-rts-master/modules/hal/stm32/stm32cube/stm32l4xx/drivers/src/stm32l4xx_ll_dma.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 8,
+			"compileGroupIndex" : 0,
+			"path" : "/home/rts/zephyr-rts-master/modules/hal/stm32/stm32cube/stm32l4xx/drivers/src/stm32l4xx_ll_rng.c",
 			"sourceGroupIndex" : 0
 		},
 		{

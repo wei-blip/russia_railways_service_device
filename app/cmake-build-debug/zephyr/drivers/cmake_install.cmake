@@ -99,6 +99,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/entropy/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/timer/cmake_install.cmake")
 endif()
 

@@ -400,6 +400,10 @@
 		},
 		{
 			"backtrace" : 3,
+			"id" : "subsys__random::@cedacd108475236dd318"
+		},
+		{
+			"backtrace" : 3,
 			"id" : "drivers__interrupt_controller::@4ccdf64818bf568667f1"
 		},
 		{
@@ -429,6 +433,10 @@
 		{
 			"backtrace" : 3,
 			"id" : "drivers__serial::@18e421c5ba74f72aaba5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "drivers__entropy::@e00872c89ca6c5bd3fc0"
 		},
 		{
 			"backtrace" : 3,
@@ -533,6 +541,11 @@
 			},
 			{
 				"backtrace" : 3,
+				"fragment" : "zephyr/subsys/random/libsubsys__random.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
 				"fragment" : "zephyr/drivers/interrupt_controller/libdrivers__interrupt_controller.a",
 				"role" : "libraries"
 			},
@@ -569,6 +582,11 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "zephyr/drivers/serial/libdrivers__serial.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "zephyr/drivers/entropy/libdrivers__entropy.a",
 				"role" : "libraries"
 			},
 			{
