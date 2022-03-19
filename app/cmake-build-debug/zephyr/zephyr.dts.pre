@@ -1775,6 +1775,23 @@ arduino_spi: &spi1 {};
 
 
 
+
+/ {
+    gpio_keys {
+        compatible = "gpio-keys";
+        state_pin: state_pin {
+            label = "STATE";
+            status = "okay";
+            gpios = <&gpioa 0 ((0 << 0) | (1 << 5))>;
+        };
+    };
+
+    aliases {
+        state = &state_pin;
+    };
+};
+
+
 &spi1 {
     status = "okay";
     cs-gpios = <&gpiob 6 ((1 << 0))>;

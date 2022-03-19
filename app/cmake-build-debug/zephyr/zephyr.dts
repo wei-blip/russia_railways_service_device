@@ -17,6 +17,7 @@
 	aliases {
 		sw0 = &user_button;
 		led0 = &green_led;
+		state = &state_pin;
 	};
 	soc {
 		#address-cells = < 0x1 >;
@@ -1263,6 +1264,11 @@
 		user_button: button {
 			label = "User";
 			gpios = < &gpioc 0xd 0x1 >;
+		};
+		state_pin: state_pin {
+			label = "STATE";
+			status = "okay";
+			gpios = < &gpioa 0x0 0x20 >;
 		};
 	};
 	leds {

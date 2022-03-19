@@ -45,7 +45,7 @@
  *   - /soc/pin-controller@48000000/gpio@48001c00
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
-__devicehdl_DT_N_S_soc_S_rcc_40021000[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 11, 3, 2, 12, 13, 6, 10, 7, 4, 8, 5, DEVICE_HANDLE_ENDS };
+__devicehdl_DT_N_S_soc_S_rcc_40021000[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 12, 13, 6, 10, 7, 4, 8, 5, 11, 3, 2, DEVICE_HANDLE_ENDS };
 
 /* 2 : /soc/dma@40020000:
  * Direct Dependencies:
@@ -109,6 +109,7 @@ __devicehdl_DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000400[] = { 1, DEVICE
  *   - (/soc/pin-controller@48000000)
  *   - /soc/rcc@40021000
  * Supported:
+ *   - (/gpio_keys/state_pin)
  *   - (/leds/led_0)
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
@@ -175,4 +176,4 @@ __devicehdl_DT_N_S_soc_S_spi_40013000[] = { 7, 1, DEVICE_HANDLE_SEP, DEVICE_HAND
  *   - /soc/pin-controller@48000000/gpio@48000800
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
-__devicehdl_DT_N_S_soc_S_spi_40013000_S_sx1278_0[] = { 13, 6, 7, DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };
+__devicehdl_DT_N_S_soc_S_spi_40013000_S_sx1278_0[] = { 7, 6, 13, DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };
