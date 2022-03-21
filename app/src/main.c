@@ -4,7 +4,6 @@
 #include <logging/log.h>
 LOG_MODULE_REGISTER(service_device, LOG_LEVEL_DBG);
 
-
 uint8_t uart_buf_tx[UART_TX_BUF_LEN] = {0};
 uint8_t uart_buf_rx[UART_RX_BUF_LEN] = {0};
 
@@ -16,15 +15,10 @@ atomic_t atomic_freq = ATOMIC_INIT(433000000);
 atomic_t atomic_sf = ATOMIC_INIT(SF_12);
 
 struct k_work work_uart_data_proc = {0};
-struct gpio_callback state_bluetooth_cb;
 
 /**
  * Structs and enums area end
  * */
-
-void state_bluetooth_active_cb (const struct device *port, struct gpio_callback *cb, gpio_port_pins_t pins)
-{
-}
 
 void event_cb(const struct device* dev, struct uart_event* evt, void* user_data) {
     switch (evt->type) {
@@ -50,6 +44,7 @@ void event_cb(const struct device* dev, struct uart_event* evt, void* user_data)
 
 void work_uart_data_proc_handler(struct k_work *item)
 {
+    static const struct device* uart_dev;
     struct parsed_frame_s parsed_frame = {0};
     /* Select current command */
     parsed_frame.cmd_ptr = strtok((char*)(&uart_buf_rx), "=");
@@ -61,9 +56,11 @@ void work_uart_data_proc_handler(struct k_work *item)
         atomic_set(&atomic_cur_state, STATE_START_PER_MEAS);
         atomic_set(&atomic_per_num, (atomic_val_t)parsed_frame.arg); /* Set packet num */
 
-    } else if (!strcmp(parsed_frame.cmd_ptr, COMMAND_TYPE_STOP_RECEIVE_SESSION)) { /* Stop PER measurement */
+    } else if (!strcmp(parsed_frame.cmd_ptr, COMMAND_TYPE_STOP_RECEIVE_SESSION)) { /* Stop receive */
 
-        atomic_set(&atomic_cur_state, STATE_IDLE);
+        atomic_set(&atomic_cur_state, STATE_STOP);
+        uart_dev = device_get_binding(CURRENT_UART_DEVICE);
+        send_to_terminal(uart_dev, "Wait while started transaction will be ended\n");
 
     } else if (!strcmp(parsed_frame.cmd_ptr, COMMAND_TYPE_GET_CFG)) { /* Get lora modem configuration parameters */
 
@@ -85,25 +82,25 @@ void work_uart_data_proc_handler(struct k_work *item)
     } else if (!strcmp(parsed_frame.cmd_ptr, COMMAND_TYPE_SET_SF)) { /* Change SF value in lora configuration param */
 
         switch (parsed_frame.arg) {
-            case 12:
+            case DR_SF_12:
                 atomic_set(&atomic_sf, SF_12);
                 break;
-            case 11:
+            case DR_SF_11:
                 atomic_set(&atomic_sf, SF_11);
                 break;
-            case 10:
+            case DR_SF_10:
                 atomic_set(&atomic_sf, SF_10);
                 break;
-            case 9:
+            case DR_SF_9:
                 atomic_set(&atomic_sf, SF_9);
                 break;
-            case 8:
+            case DR_SF_8:
                 atomic_set(&atomic_sf, SF_8);
                 break;
-            case 7:
+            case DR_SF_7:
                 atomic_set(&atomic_sf, SF_7);
                 break;
-            case 6:
+            case DR_SF_6:
                 atomic_set(&atomic_sf, SF_6);
                 break;
         }
@@ -117,8 +114,6 @@ void work_uart_data_proc_handler(struct k_work *item)
 
 _Noreturn void common_task(void)
 {
-    int8_t snr = 0;
-    int16_t rssi = 0;
     volatile int32_t ret = 0;
     struct print_data_elem_s print_data = {0};
 
@@ -129,7 +124,7 @@ _Noreturn void common_task(void)
       .datarate = atomic_get(&atomic_sf),
       .preamble_len = 8,
       .coding_rate = CR_4_5,
-      .tx_power = 20
+      .tx_power = 0
     };
     const struct device *lora_dev;
     const struct device *uart_dev;
@@ -171,7 +166,7 @@ _Noreturn void common_task(void)
 
 
     while(1) {
-        if (atomic_cas(&atomic_cur_state, STATE_RECV, STATE_IDLE)) {
+        if (atomic_cas(&atomic_cur_state, STATE_RECV, STATE_IDLE)) { /* This is start state */
 
             /* Start UART receive */
             uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
@@ -179,16 +174,17 @@ _Noreturn void common_task(void)
 
         } else if (atomic_cas(&atomic_cur_state, STATE_TRANSMIT, STATE_IDLE)) {
 
+            /* Receive stopped into callback function */
             lora_cfg.tx = true;
             lora_config(lora_dev, &lora_cfg);
             lora_send(lora_dev, radio_buf_tx, RADIO_BUF_LEN);
+            lora_recv_async(lora_dev, lora_receive_cb, lora_rx_error_timeout_cb); /* Restart receive */
             atomic_cas(&atomic_cur_state, STATE_TRANSMIT, STATE_RECV);
 
         } else if (atomic_cas(&atomic_cur_state, STATE_START_PER_MEAS, STATE_PER_MEAS_RUN)) {
 
-            memcpy(uart_buf_tx, "Wait while previous receive complete...\n",
-                   strlen("Wait while previous receive complete...\n"));
-            uart_tx(uart_dev, uart_buf_tx, strlen("Wait while previous receive complete...\n"), TIMEOUT);
+            /* Start UART receive */
+            uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
             per_meas(lora_dev, &lora_cfg, uart_dev, uart_buf_tx);
             /* Change currently state on STATE_IDLE if it still equals STATE_PER_MEAS_RUN
              * Else do nothing*/
@@ -198,55 +194,37 @@ _Noreturn void common_task(void)
 
             /* Start UART receive */
             uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            print_modem_cfg(uart_dev, uart_buf_tx, &lora_cfg);
+            print_modem_cfg(uart_dev, &lora_cfg);
 
         } else if (atomic_cas(&atomic_cur_state, STATE_INCR_FREQ, STATE_IDLE)) {
 
             /* Start UART receive */
             uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            if (!incr_decr_modem_frequency(lora_dev, &lora_cfg, true)) {
-                print_modem_cfg(uart_dev, uart_buf_tx, &lora_cfg);
-            } else {
-                memcpy(uart_buf_tx, "Failed to change frequency!!!\n",
-                       strlen("Failed to change frequency!!!\n"));
-                uart_tx(uart_dev, uart_buf_tx, strlen(uart_buf_tx), TIMEOUT);
-            }
+            incr_decr_modem_frequency(lora_dev, &lora_cfg, true, uart_dev, uart_buf_tx);
 
         } else if (atomic_cas(&atomic_cur_state, STATE_DECR_FREQ, STATE_IDLE)) {
 
             /* Start UART receive */
             uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            if (!incr_decr_modem_frequency(lora_dev, &lora_cfg, false)) {
-                print_modem_cfg(uart_dev, uart_buf_tx, &lora_cfg);
-            } else {
-                memcpy(uart_buf_tx, "Failed to change frequency!!!\n",
-                       strlen("Failed to change frequency!!!\n"));
-                uart_tx(uart_dev, uart_buf_tx, strlen(uart_buf_tx), TIMEOUT);
-            }
+            incr_decr_modem_frequency(lora_dev, &lora_cfg, false, uart_dev, uart_buf_tx);
 
         } else if (atomic_cas(&atomic_cur_state, STATE_SET_FREQ, STATE_IDLE)) {
 
             /* Start UART receive */
             uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            if (change_modem_frequency(lora_dev, &lora_cfg, atomic_get(&atomic_freq))) {
-                print_modem_cfg(uart_dev, uart_buf_tx, &lora_cfg);
-            } else {
-                memcpy(uart_buf_tx, "Failed to change frequency!!!\n",
-                       strlen("Failed to change frequency!!!\n"));
-                uart_tx(uart_dev, uart_buf_tx, strlen(uart_buf_tx), TIMEOUT);
-            }
+            change_modem_frequency(lora_dev, &lora_cfg, atomic_get(&atomic_freq), uart_dev, uart_buf_tx);
 
         } else if (atomic_cas(&atomic_cur_state, STATE_SET_SF, STATE_IDLE)) {
 
             /* Start UART receive */
             uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            if (change_modem_datarate(lora_dev, &lora_cfg, atomic_get(&atomic_sf))) {
-                print_modem_cfg(uart_dev, uart_buf_tx, &lora_cfg);
-            } else {
-                memcpy(uart_buf_tx, "Failed to change SF value!!!\n",
-                       strlen("Failed to change SF value!!!\n"));
-                uart_tx(uart_dev, uart_buf_tx, strlen(uart_buf_tx), TIMEOUT);
-            }
+            change_modem_datarate(lora_dev, &lora_cfg, atomic_get(&atomic_sf), uart_dev, uart_buf_tx);
+
+        } else if (atomic_cas(&atomic_cur_state, STATE_STOP, STATE_IDLE)) {
+
+            /* Start UART receive */
+            uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
+            stop_session(lora_dev, uart_dev, uart_buf_tx);
 
         } else {
             k_sleep(K_MSEC(10));
@@ -255,4 +233,4 @@ _Noreturn void common_task(void)
 }
 
 K_THREAD_DEFINE(common_task_id, STACK_SIZE, common_task, NULL, NULL, NULL,
-                -2, 0, 0);
+                0, 0, 0);

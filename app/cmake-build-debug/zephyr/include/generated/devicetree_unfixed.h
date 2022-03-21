@@ -28,233 +28,232 @@
  *   17  /soc/rcc@40021000
  *   18  /soc/pin-controller@48000000/gpio@48000800
  *   19  /gpio_keys/button
- *   20  /soc/pin-controller@48000000/gpio@48000000
- *   21  /gpio_keys/state_pin
- *   22  /leds
- *   23  /leds/led_0
- *   24  /soc/interrupt-controller@e000e100
- *   25  /soc/adc@50040000
- *   26  /soc/adc@50040100
- *   27  /soc/pin-controller@48000000/can1_rx_pa11
- *   28  /soc/pin-controller@48000000/can1_tx_pa12
- *   29  /soc/can@40006400
- *   30  /soc/dac@40007400
- *   31  /soc/dma@40020400
- *   32  /soc/pin-controller@48000000/i2c1_scl_pb8
- *   33  /soc/pin-controller@48000000/i2c1_sda_pb7
- *   34  /soc/i2c@40005400
- *   35  /soc/i2c@40005800
- *   36  /soc/i2c@40005c00
- *   37  /soc/i2c@40008400
- *   38  /soc/interrupt-controller@40010400
- *   39  /soc/quadspi@a0001000
- *   40  /soc/rng@50060800
- *   41  /soc/rtc@40002800
- *   42  /soc/pin-controller@48000000/usart2_rx_pa3
- *   43  /soc/pin-controller@48000000/usart2_tx_pa2
- *   44  /soc/serial@40004400
- *   45  /soc/serial@40004800
- *   46  /soc/serial@40004c00
- *   47  /soc/serial@40008000
- *   48  /soc/dma@40020000
- *   49  /soc/pin-controller@48000000/usart1_rx_pa10
- *   50  /soc/pin-controller@48000000/usart1_tx_pa9
- *   51  /soc/serial@40013800
- *   52  /soc/spi@40003800
- *   53  /soc/spi@40003c00
- *   54  /soc/timer@e000e010
- *   55  /soc/timers@40001000
- *   56  /soc/timers@40007c00
- *   57  /usbphy
- *   58  /soc/usb@40006800
- *   59  /soc/watchdog@40002c00
- *   60  /soc/watchdog@40003000
- *   61  /soc/flash-controller@40022000
- *   62  /soc/flash-controller@40022000/flash@8000000
- *   63  /soc/flash-controller@40022000/flash@8000000/partitions
- *   64  /soc/flash-controller@40022000/flash@8000000/partitions/partition@7c000
- *   65  /soc/pin-controller@48000000/adc1_in10_pa5
- *   66  /soc/pin-controller@48000000/adc1_in11_pa6
- *   67  /soc/pin-controller@48000000/adc1_in12_pa7
- *   68  /soc/pin-controller@48000000/adc1_in13_pc4
- *   69  /soc/pin-controller@48000000/adc1_in14_pc5
- *   70  /soc/pin-controller@48000000/adc1_in15_pb0
- *   71  /soc/pin-controller@48000000/adc1_in16_pb1
- *   72  /soc/pin-controller@48000000/adc1_in1_pc0
- *   73  /soc/pin-controller@48000000/adc1_in2_pc1
- *   74  /soc/pin-controller@48000000/adc1_in3_pc2
- *   75  /soc/pin-controller@48000000/adc1_in4_pc3
- *   76  /soc/pin-controller@48000000/adc1_in5_pa0
- *   77  /soc/pin-controller@48000000/adc1_in6_pa1
- *   78  /soc/pin-controller@48000000/adc1_in7_pa2
- *   79  /soc/pin-controller@48000000/adc1_in8_pa3
- *   80  /soc/pin-controller@48000000/adc1_in9_pa4
- *   81  /soc/pin-controller@48000000/can1_rx_pb12
- *   82  /soc/pin-controller@48000000/can1_rx_pb5
- *   83  /soc/pin-controller@48000000/can1_rx_pb8
- *   84  /soc/pin-controller@48000000/can1_tx_pb13
- *   85  /soc/pin-controller@48000000/can1_tx_pb6
- *   86  /soc/pin-controller@48000000/can1_tx_pb9
- *   87  /soc/pin-controller@48000000/dac1_out1_pa4
- *   88  /soc/pin-controller@48000000/gpio@48000c00
- *   89  /soc/pin-controller@48000000/gpio@48001000
- *   90  /soc/pin-controller@48000000/gpio@48001c00
- *   91  /soc/pin-controller@48000000/i2c1_scl_pa9
- *   92  /soc/pin-controller@48000000/i2c1_scl_pb6
- *   93  /soc/pin-controller@48000000/i2c1_sda_pa10
- *   94  /soc/pin-controller@48000000/i2c1_sda_pb9
- *   95  /soc/pin-controller@48000000/i2c2_scl_pb10
- *   96  /soc/pin-controller@48000000/i2c2_scl_pb13
- *   97  /soc/pin-controller@48000000/i2c2_sda_pb11
- *   98  /soc/pin-controller@48000000/i2c2_sda_pb14
- *   99  /soc/pin-controller@48000000/i2c3_scl_pa7
- *   100 /soc/pin-controller@48000000/i2c3_scl_pc0
- *   101 /soc/pin-controller@48000000/i2c3_sda_pb4
- *   102 /soc/pin-controller@48000000/i2c3_sda_pc1
- *   103 /soc/pin-controller@48000000/i2c4_scl_pb10
- *   104 /soc/pin-controller@48000000/i2c4_scl_pb6
- *   105 /soc/pin-controller@48000000/i2c4_scl_pc0
- *   106 /soc/pin-controller@48000000/i2c4_sda_pb11
- *   107 /soc/pin-controller@48000000/i2c4_sda_pb7
- *   108 /soc/pin-controller@48000000/i2c4_sda_pc1
- *   109 /soc/pin-controller@48000000/lpuart1_cts_pa6
- *   110 /soc/pin-controller@48000000/lpuart1_cts_pb13
- *   111 /soc/pin-controller@48000000/lpuart1_rts_pb1
- *   112 /soc/pin-controller@48000000/lpuart1_rts_pb12
- *   113 /soc/pin-controller@48000000/lpuart1_rx_pa3
- *   114 /soc/pin-controller@48000000/lpuart1_rx_pb10
- *   115 /soc/pin-controller@48000000/lpuart1_rx_pc0
- *   116 /soc/pin-controller@48000000/lpuart1_tx_pa2
- *   117 /soc/pin-controller@48000000/lpuart1_tx_pb11
- *   118 /soc/pin-controller@48000000/lpuart1_tx_pc1
- *   119 /soc/pin-controller@48000000/quadspi_bk1_io0_pb1
- *   120 /soc/pin-controller@48000000/quadspi_bk1_io1_pb0
- *   121 /soc/pin-controller@48000000/quadspi_bk1_io2_pa7
- *   122 /soc/pin-controller@48000000/quadspi_bk1_io3_pa6
- *   123 /soc/pin-controller@48000000/quadspi_bk1_ncs_pa2
- *   124 /soc/pin-controller@48000000/quadspi_bk1_ncs_pb11
- *   125 /soc/pin-controller@48000000/quadspi_clk_pa3
- *   126 /soc/pin-controller@48000000/quadspi_clk_pb10
- *   127 /soc/pin-controller@48000000/sdmmc1_ck_pc12
- *   128 /soc/pin-controller@48000000/sdmmc1_cmd_pd2
- *   129 /soc/pin-controller@48000000/sdmmc1_d0_pc8
- *   130 /soc/pin-controller@48000000/sdmmc1_d1_pc9
- *   131 /soc/pin-controller@48000000/sdmmc1_d2_pc10
- *   132 /soc/pin-controller@48000000/sdmmc1_d3_pc11
- *   133 /soc/pin-controller@48000000/sdmmc1_d4_pb8
- *   134 /soc/pin-controller@48000000/sdmmc1_d5_pb9
- *   135 /soc/pin-controller@48000000/sdmmc1_d6_pc6
- *   136 /soc/pin-controller@48000000/sdmmc1_d7_pc7
- *   137 /soc/pin-controller@48000000/spi1_miso_pa11
- *   138 /soc/pin-controller@48000000/spi1_miso_pb4
- *   139 /soc/pin-controller@48000000/spi1_mosi_pa12
- *   140 /soc/pin-controller@48000000/spi1_mosi_pb5
- *   141 /soc/pin-controller@48000000/spi1_nss_pa15
- *   142 /soc/pin-controller@48000000/spi1_nss_pa4
- *   143 /soc/pin-controller@48000000/spi1_nss_pb0
- *   144 /soc/pin-controller@48000000/spi1_sck_pa1
- *   145 /soc/pin-controller@48000000/spi1_sck_pb3
- *   146 /soc/pin-controller@48000000/spi2_miso_pb14
- *   147 /soc/pin-controller@48000000/spi2_miso_pc2
- *   148 /soc/pin-controller@48000000/spi2_mosi_pb15
- *   149 /soc/pin-controller@48000000/spi2_mosi_pc3
- *   150 /soc/pin-controller@48000000/spi2_nss_pb12
- *   151 /soc/pin-controller@48000000/spi2_nss_pb9
- *   152 /soc/pin-controller@48000000/spi2_sck_pb10
- *   153 /soc/pin-controller@48000000/spi2_sck_pb13
- *   154 /soc/pin-controller@48000000/spi3_miso_pb4
- *   155 /soc/pin-controller@48000000/spi3_miso_pc11
- *   156 /soc/pin-controller@48000000/spi3_mosi_pb5
- *   157 /soc/pin-controller@48000000/spi3_mosi_pc12
- *   158 /soc/pin-controller@48000000/spi3_nss_pa15
- *   159 /soc/pin-controller@48000000/spi3_nss_pa4
- *   160 /soc/pin-controller@48000000/spi3_sck_pb3
- *   161 /soc/pin-controller@48000000/spi3_sck_pc10
- *   162 /soc/pin-controller@48000000/tim15_ch1_pa2
- *   163 /soc/pin-controller@48000000/tim15_ch1_pb14
- *   164 /soc/pin-controller@48000000/tim15_ch1n_pa1
- *   165 /soc/pin-controller@48000000/tim15_ch1n_pb13
- *   166 /soc/pin-controller@48000000/tim15_ch2_pa3
- *   167 /soc/pin-controller@48000000/tim15_ch2_pb15
- *   168 /soc/pin-controller@48000000/tim16_ch1_pa6
- *   169 /soc/pin-controller@48000000/tim16_ch1_pb8
- *   170 /soc/pin-controller@48000000/tim16_ch1n_pb6
- *   171 /soc/pin-controller@48000000/tim1_ch1_pa8
- *   172 /soc/pin-controller@48000000/tim1_ch1n_pa7
- *   173 /soc/pin-controller@48000000/tim1_ch1n_pb13
- *   174 /soc/pin-controller@48000000/tim1_ch2_pa9
- *   175 /soc/pin-controller@48000000/tim1_ch2n_pb0
- *   176 /soc/pin-controller@48000000/tim1_ch2n_pb14
- *   177 /soc/pin-controller@48000000/tim1_ch3_pa10
- *   178 /soc/pin-controller@48000000/tim1_ch3n_pb1
- *   179 /soc/pin-controller@48000000/tim1_ch3n_pb15
- *   180 /soc/pin-controller@48000000/tim1_ch4_pa11
- *   181 /soc/pin-controller@48000000/tim2_ch1_pa15
- *   182 /soc/pin-controller@48000000/tim2_ch1_pa5
- *   183 /soc/pin-controller@48000000/tim2_ch2_pa1
- *   184 /soc/pin-controller@48000000/tim2_ch2_pb3
- *   185 /soc/pin-controller@48000000/tim2_ch3_pa2
- *   186 /soc/pin-controller@48000000/tim2_ch3_pb10
- *   187 /soc/pin-controller@48000000/tim2_ch4_pa3
- *   188 /soc/pin-controller@48000000/tim2_ch4_pb11
- *   189 /soc/pin-controller@48000000/tim3_ch1_pa6
- *   190 /soc/pin-controller@48000000/tim3_ch1_pb4
- *   191 /soc/pin-controller@48000000/tim3_ch1_pc6
- *   192 /soc/pin-controller@48000000/tim3_ch2_pa7
- *   193 /soc/pin-controller@48000000/tim3_ch2_pb5
- *   194 /soc/pin-controller@48000000/tim3_ch2_pc7
- *   195 /soc/pin-controller@48000000/tim3_ch3_pb0
- *   196 /soc/pin-controller@48000000/tim3_ch3_pc8
- *   197 /soc/pin-controller@48000000/tim3_ch4_pb1
- *   198 /soc/pin-controller@48000000/tim3_ch4_pc9
- *   199 /soc/pin-controller@48000000/uart4_cts_pb7
- *   200 /soc/pin-controller@48000000/uart4_rts_pa15
- *   201 /soc/pin-controller@48000000/uart4_rx_pa1
- *   202 /soc/pin-controller@48000000/uart4_rx_pc11
- *   203 /soc/pin-controller@48000000/uart4_tx_pa0
- *   204 /soc/pin-controller@48000000/uart4_tx_pc10
- *   205 /soc/pin-controller@48000000/usart1_cts_pa11
- *   206 /soc/pin-controller@48000000/usart1_cts_pb4
- *   207 /soc/pin-controller@48000000/usart1_rts_pa12
- *   208 /soc/pin-controller@48000000/usart1_rts_pb3
- *   209 /soc/pin-controller@48000000/usart1_rx_pb7
- *   210 /soc/pin-controller@48000000/usart1_tx_pb6
- *   211 /soc/pin-controller@48000000/usart2_cts_pa0
- *   212 /soc/pin-controller@48000000/usart2_rts_pa1
- *   213 /soc/pin-controller@48000000/usart2_rx_pa15
- *   214 /soc/pin-controller@48000000/usart3_cts_pa6
- *   215 /soc/pin-controller@48000000/usart3_cts_pb13
- *   216 /soc/pin-controller@48000000/usart3_rts_pa15
- *   217 /soc/pin-controller@48000000/usart3_rts_pb1
- *   218 /soc/pin-controller@48000000/usart3_rts_pb14
- *   219 /soc/pin-controller@48000000/usart3_rts_pd2
- *   220 /soc/pin-controller@48000000/usart3_rx_pb11
- *   221 /soc/pin-controller@48000000/usart3_rx_pc11
- *   222 /soc/pin-controller@48000000/usart3_rx_pc5
- *   223 /soc/pin-controller@48000000/usart3_tx_pb10
- *   224 /soc/pin-controller@48000000/usart3_tx_pc10
- *   225 /soc/pin-controller@48000000/usart3_tx_pc4
- *   226 /soc/pin-controller@48000000/usb_dm_pa11
- *   227 /soc/pin-controller@48000000/usb_dp_pa12
- *   228 /soc/pin-controller@48000000/usb_noe_pa13
- *   229 /soc/pin-controller@48000000/usb_noe_pc9
- *   230 /soc/pin-controller@48000000/gpio@48000400
- *   231 /soc/pin-controller@48000000/spi1_miso_pa6
- *   232 /soc/pin-controller@48000000/spi1_mosi_pa7
- *   233 /soc/pin-controller@48000000/spi1_sck_pa5
- *   234 /soc/spi@40013000
- *   235 /soc/spi@40013000/sx1278@0
- *   236 /soc/timers@40000000
- *   237 /soc/pin-controller@48000000/tim2_ch1_pa0
- *   238 /soc/timers@40000000/pwm
- *   239 /soc/timers@40000400
- *   240 /soc/timers@40000400/pwm
- *   241 /soc/timers@40012c00
- *   242 /soc/timers@40012c00/pwm
- *   243 /soc/timers@40014000
- *   244 /soc/timers@40014000/pwm
- *   245 /soc/timers@40014400
- *   246 /soc/timers@40014400/pwm
+ *   20  /leds
+ *   21  /soc/pin-controller@48000000/gpio@48000000
+ *   22  /leds/led_0
+ *   23  /soc/interrupt-controller@e000e100
+ *   24  /soc/adc@50040000
+ *   25  /soc/adc@50040100
+ *   26  /soc/pin-controller@48000000/can1_rx_pa11
+ *   27  /soc/pin-controller@48000000/can1_tx_pa12
+ *   28  /soc/can@40006400
+ *   29  /soc/dac@40007400
+ *   30  /soc/dma@40020400
+ *   31  /soc/pin-controller@48000000/i2c1_scl_pb8
+ *   32  /soc/pin-controller@48000000/i2c1_sda_pb7
+ *   33  /soc/i2c@40005400
+ *   34  /soc/i2c@40005800
+ *   35  /soc/i2c@40005c00
+ *   36  /soc/i2c@40008400
+ *   37  /soc/interrupt-controller@40010400
+ *   38  /soc/quadspi@a0001000
+ *   39  /soc/rng@50060800
+ *   40  /soc/rtc@40002800
+ *   41  /soc/pin-controller@48000000/usart2_rx_pa3
+ *   42  /soc/pin-controller@48000000/usart2_tx_pa2
+ *   43  /soc/serial@40004400
+ *   44  /soc/serial@40004800
+ *   45  /soc/serial@40004c00
+ *   46  /soc/serial@40008000
+ *   47  /soc/dma@40020000
+ *   48  /soc/pin-controller@48000000/usart1_rx_pa10
+ *   49  /soc/pin-controller@48000000/usart1_tx_pa9
+ *   50  /soc/serial@40013800
+ *   51  /soc/spi@40003800
+ *   52  /soc/spi@40003c00
+ *   53  /soc/timer@e000e010
+ *   54  /soc/timers@40001000
+ *   55  /soc/timers@40007c00
+ *   56  /usbphy
+ *   57  /soc/usb@40006800
+ *   58  /soc/watchdog@40002c00
+ *   59  /soc/watchdog@40003000
+ *   60  /soc/flash-controller@40022000
+ *   61  /soc/flash-controller@40022000/flash@8000000
+ *   62  /soc/flash-controller@40022000/flash@8000000/partitions
+ *   63  /soc/flash-controller@40022000/flash@8000000/partitions/partition@7c000
+ *   64  /soc/pin-controller@48000000/adc1_in10_pa5
+ *   65  /soc/pin-controller@48000000/adc1_in11_pa6
+ *   66  /soc/pin-controller@48000000/adc1_in12_pa7
+ *   67  /soc/pin-controller@48000000/adc1_in13_pc4
+ *   68  /soc/pin-controller@48000000/adc1_in14_pc5
+ *   69  /soc/pin-controller@48000000/adc1_in15_pb0
+ *   70  /soc/pin-controller@48000000/adc1_in16_pb1
+ *   71  /soc/pin-controller@48000000/adc1_in1_pc0
+ *   72  /soc/pin-controller@48000000/adc1_in2_pc1
+ *   73  /soc/pin-controller@48000000/adc1_in3_pc2
+ *   74  /soc/pin-controller@48000000/adc1_in4_pc3
+ *   75  /soc/pin-controller@48000000/adc1_in5_pa0
+ *   76  /soc/pin-controller@48000000/adc1_in6_pa1
+ *   77  /soc/pin-controller@48000000/adc1_in7_pa2
+ *   78  /soc/pin-controller@48000000/adc1_in8_pa3
+ *   79  /soc/pin-controller@48000000/adc1_in9_pa4
+ *   80  /soc/pin-controller@48000000/can1_rx_pb12
+ *   81  /soc/pin-controller@48000000/can1_rx_pb5
+ *   82  /soc/pin-controller@48000000/can1_rx_pb8
+ *   83  /soc/pin-controller@48000000/can1_tx_pb13
+ *   84  /soc/pin-controller@48000000/can1_tx_pb6
+ *   85  /soc/pin-controller@48000000/can1_tx_pb9
+ *   86  /soc/pin-controller@48000000/dac1_out1_pa4
+ *   87  /soc/pin-controller@48000000/gpio@48000c00
+ *   88  /soc/pin-controller@48000000/gpio@48001000
+ *   89  /soc/pin-controller@48000000/gpio@48001c00
+ *   90  /soc/pin-controller@48000000/i2c1_scl_pa9
+ *   91  /soc/pin-controller@48000000/i2c1_scl_pb6
+ *   92  /soc/pin-controller@48000000/i2c1_sda_pa10
+ *   93  /soc/pin-controller@48000000/i2c1_sda_pb9
+ *   94  /soc/pin-controller@48000000/i2c2_scl_pb10
+ *   95  /soc/pin-controller@48000000/i2c2_scl_pb13
+ *   96  /soc/pin-controller@48000000/i2c2_sda_pb11
+ *   97  /soc/pin-controller@48000000/i2c2_sda_pb14
+ *   98  /soc/pin-controller@48000000/i2c3_scl_pa7
+ *   99  /soc/pin-controller@48000000/i2c3_scl_pc0
+ *   100 /soc/pin-controller@48000000/i2c3_sda_pb4
+ *   101 /soc/pin-controller@48000000/i2c3_sda_pc1
+ *   102 /soc/pin-controller@48000000/i2c4_scl_pb10
+ *   103 /soc/pin-controller@48000000/i2c4_scl_pb6
+ *   104 /soc/pin-controller@48000000/i2c4_scl_pc0
+ *   105 /soc/pin-controller@48000000/i2c4_sda_pb11
+ *   106 /soc/pin-controller@48000000/i2c4_sda_pb7
+ *   107 /soc/pin-controller@48000000/i2c4_sda_pc1
+ *   108 /soc/pin-controller@48000000/lpuart1_cts_pa6
+ *   109 /soc/pin-controller@48000000/lpuart1_cts_pb13
+ *   110 /soc/pin-controller@48000000/lpuart1_rts_pb1
+ *   111 /soc/pin-controller@48000000/lpuart1_rts_pb12
+ *   112 /soc/pin-controller@48000000/lpuart1_rx_pa3
+ *   113 /soc/pin-controller@48000000/lpuart1_rx_pb10
+ *   114 /soc/pin-controller@48000000/lpuart1_rx_pc0
+ *   115 /soc/pin-controller@48000000/lpuart1_tx_pa2
+ *   116 /soc/pin-controller@48000000/lpuart1_tx_pb11
+ *   117 /soc/pin-controller@48000000/lpuart1_tx_pc1
+ *   118 /soc/pin-controller@48000000/quadspi_bk1_io0_pb1
+ *   119 /soc/pin-controller@48000000/quadspi_bk1_io1_pb0
+ *   120 /soc/pin-controller@48000000/quadspi_bk1_io2_pa7
+ *   121 /soc/pin-controller@48000000/quadspi_bk1_io3_pa6
+ *   122 /soc/pin-controller@48000000/quadspi_bk1_ncs_pa2
+ *   123 /soc/pin-controller@48000000/quadspi_bk1_ncs_pb11
+ *   124 /soc/pin-controller@48000000/quadspi_clk_pa3
+ *   125 /soc/pin-controller@48000000/quadspi_clk_pb10
+ *   126 /soc/pin-controller@48000000/sdmmc1_ck_pc12
+ *   127 /soc/pin-controller@48000000/sdmmc1_cmd_pd2
+ *   128 /soc/pin-controller@48000000/sdmmc1_d0_pc8
+ *   129 /soc/pin-controller@48000000/sdmmc1_d1_pc9
+ *   130 /soc/pin-controller@48000000/sdmmc1_d2_pc10
+ *   131 /soc/pin-controller@48000000/sdmmc1_d3_pc11
+ *   132 /soc/pin-controller@48000000/sdmmc1_d4_pb8
+ *   133 /soc/pin-controller@48000000/sdmmc1_d5_pb9
+ *   134 /soc/pin-controller@48000000/sdmmc1_d6_pc6
+ *   135 /soc/pin-controller@48000000/sdmmc1_d7_pc7
+ *   136 /soc/pin-controller@48000000/spi1_miso_pa11
+ *   137 /soc/pin-controller@48000000/spi1_miso_pb4
+ *   138 /soc/pin-controller@48000000/spi1_mosi_pa12
+ *   139 /soc/pin-controller@48000000/spi1_mosi_pb5
+ *   140 /soc/pin-controller@48000000/spi1_nss_pa15
+ *   141 /soc/pin-controller@48000000/spi1_nss_pa4
+ *   142 /soc/pin-controller@48000000/spi1_nss_pb0
+ *   143 /soc/pin-controller@48000000/spi1_sck_pa1
+ *   144 /soc/pin-controller@48000000/spi1_sck_pb3
+ *   145 /soc/pin-controller@48000000/spi2_miso_pb14
+ *   146 /soc/pin-controller@48000000/spi2_miso_pc2
+ *   147 /soc/pin-controller@48000000/spi2_mosi_pb15
+ *   148 /soc/pin-controller@48000000/spi2_mosi_pc3
+ *   149 /soc/pin-controller@48000000/spi2_nss_pb12
+ *   150 /soc/pin-controller@48000000/spi2_nss_pb9
+ *   151 /soc/pin-controller@48000000/spi2_sck_pb10
+ *   152 /soc/pin-controller@48000000/spi2_sck_pb13
+ *   153 /soc/pin-controller@48000000/spi3_miso_pb4
+ *   154 /soc/pin-controller@48000000/spi3_miso_pc11
+ *   155 /soc/pin-controller@48000000/spi3_mosi_pb5
+ *   156 /soc/pin-controller@48000000/spi3_mosi_pc12
+ *   157 /soc/pin-controller@48000000/spi3_nss_pa15
+ *   158 /soc/pin-controller@48000000/spi3_nss_pa4
+ *   159 /soc/pin-controller@48000000/spi3_sck_pb3
+ *   160 /soc/pin-controller@48000000/spi3_sck_pc10
+ *   161 /soc/pin-controller@48000000/tim15_ch1_pa2
+ *   162 /soc/pin-controller@48000000/tim15_ch1_pb14
+ *   163 /soc/pin-controller@48000000/tim15_ch1n_pa1
+ *   164 /soc/pin-controller@48000000/tim15_ch1n_pb13
+ *   165 /soc/pin-controller@48000000/tim15_ch2_pa3
+ *   166 /soc/pin-controller@48000000/tim15_ch2_pb15
+ *   167 /soc/pin-controller@48000000/tim16_ch1_pa6
+ *   168 /soc/pin-controller@48000000/tim16_ch1_pb8
+ *   169 /soc/pin-controller@48000000/tim16_ch1n_pb6
+ *   170 /soc/pin-controller@48000000/tim1_ch1_pa8
+ *   171 /soc/pin-controller@48000000/tim1_ch1n_pa7
+ *   172 /soc/pin-controller@48000000/tim1_ch1n_pb13
+ *   173 /soc/pin-controller@48000000/tim1_ch2_pa9
+ *   174 /soc/pin-controller@48000000/tim1_ch2n_pb0
+ *   175 /soc/pin-controller@48000000/tim1_ch2n_pb14
+ *   176 /soc/pin-controller@48000000/tim1_ch3_pa10
+ *   177 /soc/pin-controller@48000000/tim1_ch3n_pb1
+ *   178 /soc/pin-controller@48000000/tim1_ch3n_pb15
+ *   179 /soc/pin-controller@48000000/tim1_ch4_pa11
+ *   180 /soc/pin-controller@48000000/tim2_ch1_pa15
+ *   181 /soc/pin-controller@48000000/tim2_ch1_pa5
+ *   182 /soc/pin-controller@48000000/tim2_ch2_pa1
+ *   183 /soc/pin-controller@48000000/tim2_ch2_pb3
+ *   184 /soc/pin-controller@48000000/tim2_ch3_pa2
+ *   185 /soc/pin-controller@48000000/tim2_ch3_pb10
+ *   186 /soc/pin-controller@48000000/tim2_ch4_pa3
+ *   187 /soc/pin-controller@48000000/tim2_ch4_pb11
+ *   188 /soc/pin-controller@48000000/tim3_ch1_pa6
+ *   189 /soc/pin-controller@48000000/tim3_ch1_pb4
+ *   190 /soc/pin-controller@48000000/tim3_ch1_pc6
+ *   191 /soc/pin-controller@48000000/tim3_ch2_pa7
+ *   192 /soc/pin-controller@48000000/tim3_ch2_pb5
+ *   193 /soc/pin-controller@48000000/tim3_ch2_pc7
+ *   194 /soc/pin-controller@48000000/tim3_ch3_pb0
+ *   195 /soc/pin-controller@48000000/tim3_ch3_pc8
+ *   196 /soc/pin-controller@48000000/tim3_ch4_pb1
+ *   197 /soc/pin-controller@48000000/tim3_ch4_pc9
+ *   198 /soc/pin-controller@48000000/uart4_cts_pb7
+ *   199 /soc/pin-controller@48000000/uart4_rts_pa15
+ *   200 /soc/pin-controller@48000000/uart4_rx_pa1
+ *   201 /soc/pin-controller@48000000/uart4_rx_pc11
+ *   202 /soc/pin-controller@48000000/uart4_tx_pa0
+ *   203 /soc/pin-controller@48000000/uart4_tx_pc10
+ *   204 /soc/pin-controller@48000000/usart1_cts_pa11
+ *   205 /soc/pin-controller@48000000/usart1_cts_pb4
+ *   206 /soc/pin-controller@48000000/usart1_rts_pa12
+ *   207 /soc/pin-controller@48000000/usart1_rts_pb3
+ *   208 /soc/pin-controller@48000000/usart1_rx_pb7
+ *   209 /soc/pin-controller@48000000/usart1_tx_pb6
+ *   210 /soc/pin-controller@48000000/usart2_cts_pa0
+ *   211 /soc/pin-controller@48000000/usart2_rts_pa1
+ *   212 /soc/pin-controller@48000000/usart2_rx_pa15
+ *   213 /soc/pin-controller@48000000/usart3_cts_pa6
+ *   214 /soc/pin-controller@48000000/usart3_cts_pb13
+ *   215 /soc/pin-controller@48000000/usart3_rts_pa15
+ *   216 /soc/pin-controller@48000000/usart3_rts_pb1
+ *   217 /soc/pin-controller@48000000/usart3_rts_pb14
+ *   218 /soc/pin-controller@48000000/usart3_rts_pd2
+ *   219 /soc/pin-controller@48000000/usart3_rx_pb11
+ *   220 /soc/pin-controller@48000000/usart3_rx_pc11
+ *   221 /soc/pin-controller@48000000/usart3_rx_pc5
+ *   222 /soc/pin-controller@48000000/usart3_tx_pb10
+ *   223 /soc/pin-controller@48000000/usart3_tx_pc10
+ *   224 /soc/pin-controller@48000000/usart3_tx_pc4
+ *   225 /soc/pin-controller@48000000/usb_dm_pa11
+ *   226 /soc/pin-controller@48000000/usb_dp_pa12
+ *   227 /soc/pin-controller@48000000/usb_noe_pa13
+ *   228 /soc/pin-controller@48000000/usb_noe_pc9
+ *   229 /soc/pin-controller@48000000/gpio@48000400
+ *   230 /soc/pin-controller@48000000/spi1_miso_pa6
+ *   231 /soc/pin-controller@48000000/spi1_mosi_pa7
+ *   232 /soc/pin-controller@48000000/spi1_sck_pa5
+ *   233 /soc/spi@40013000
+ *   234 /soc/spi@40013000/sx1278@0
+ *   235 /soc/timers@40000000
+ *   236 /soc/pin-controller@48000000/tim2_ch1_pa0
+ *   237 /soc/timers@40000000/pwm
+ *   238 /soc/timers@40000400
+ *   239 /soc/timers@40000400/pwm
+ *   240 /soc/timers@40012c00
+ *   241 /soc/timers@40012c00/pwm
+ *   242 /soc/timers@40014000
+ *   243 /soc/timers@40014000/pwm
+ *   244 /soc/timers@40014400
+ *   245 /soc/timers@40014400/pwm
  *
  * Definitions derived from these nodes in dependency order are next,
  * followed by /chosen nodes.
@@ -292,8 +291,8 @@
 	10, /* /cpus */ \
 	12, /* /gpio_keys */ \
 	13, /* /soc */ \
-	22, /* /leds */ \
-	57, /* /usbphy */
+	20, /* /leds */ \
+	56, /* /usbphy */
 
 /* Existence and alternate IDs: */
 #define DT_N_EXISTS 1
@@ -984,10 +983,10 @@
 
 /* Node parent (/) identifier: */
 #define DT_N_S_gpio_keys_PARENT DT_N
-#define DT_N_S_gpio_keys_FOREACH_CHILD(fn) fn(DT_N_S_gpio_keys_S_button) fn(DT_N_S_gpio_keys_S_state_pin)
-#define DT_N_S_gpio_keys_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_gpio_keys_S_button, __VA_ARGS__) fn(DT_N_S_gpio_keys_S_state_pin, __VA_ARGS__)
-#define DT_N_S_gpio_keys_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_gpio_keys_S_button) fn(DT_N_S_gpio_keys_S_state_pin) 
-#define DT_N_S_gpio_keys_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_gpio_keys_S_button, __VA_ARGS__) fn(DT_N_S_gpio_keys_S_state_pin, __VA_ARGS__) 
+#define DT_N_S_gpio_keys_FOREACH_CHILD(fn) fn(DT_N_S_gpio_keys_S_button)
+#define DT_N_S_gpio_keys_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_gpio_keys_S_button, __VA_ARGS__)
+#define DT_N_S_gpio_keys_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_gpio_keys_S_button) 
+#define DT_N_S_gpio_keys_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_gpio_keys_S_button, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
 #define DT_N_S_gpio_keys_ORD 12
@@ -998,8 +997,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_gpio_keys_SUPPORTS_ORDS \
-	19, /* /gpio_keys/button */ \
-	21, /* /gpio_keys/state_pin */
+	19, /* /gpio_keys/button */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_gpio_keys_EXISTS 1
@@ -1055,41 +1053,41 @@
 #define DT_N_S_soc_SUPPORTS_ORDS \
 	14, /* /soc/pin-controller@48000000 */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */ \
-	25, /* /soc/adc@50040000 */ \
-	26, /* /soc/adc@50040100 */ \
-	29, /* /soc/can@40006400 */ \
-	30, /* /soc/dac@40007400 */ \
-	31, /* /soc/dma@40020400 */ \
-	34, /* /soc/i2c@40005400 */ \
-	35, /* /soc/i2c@40005800 */ \
-	36, /* /soc/i2c@40005c00 */ \
-	37, /* /soc/i2c@40008400 */ \
-	38, /* /soc/interrupt-controller@40010400 */ \
-	39, /* /soc/quadspi@a0001000 */ \
-	40, /* /soc/rng@50060800 */ \
-	41, /* /soc/rtc@40002800 */ \
-	44, /* /soc/serial@40004400 */ \
-	45, /* /soc/serial@40004800 */ \
-	46, /* /soc/serial@40004c00 */ \
-	47, /* /soc/serial@40008000 */ \
-	48, /* /soc/dma@40020000 */ \
-	51, /* /soc/serial@40013800 */ \
-	52, /* /soc/spi@40003800 */ \
-	53, /* /soc/spi@40003c00 */ \
-	54, /* /soc/timer@e000e010 */ \
-	55, /* /soc/timers@40001000 */ \
-	56, /* /soc/timers@40007c00 */ \
-	58, /* /soc/usb@40006800 */ \
-	59, /* /soc/watchdog@40002c00 */ \
-	60, /* /soc/watchdog@40003000 */ \
-	61, /* /soc/flash-controller@40022000 */ \
-	234, /* /soc/spi@40013000 */ \
-	236, /* /soc/timers@40000000 */ \
-	239, /* /soc/timers@40000400 */ \
-	241, /* /soc/timers@40012c00 */ \
-	243, /* /soc/timers@40014000 */ \
-	245, /* /soc/timers@40014400 */
+	23, /* /soc/interrupt-controller@e000e100 */ \
+	24, /* /soc/adc@50040000 */ \
+	25, /* /soc/adc@50040100 */ \
+	28, /* /soc/can@40006400 */ \
+	29, /* /soc/dac@40007400 */ \
+	30, /* /soc/dma@40020400 */ \
+	33, /* /soc/i2c@40005400 */ \
+	34, /* /soc/i2c@40005800 */ \
+	35, /* /soc/i2c@40005c00 */ \
+	36, /* /soc/i2c@40008400 */ \
+	37, /* /soc/interrupt-controller@40010400 */ \
+	38, /* /soc/quadspi@a0001000 */ \
+	39, /* /soc/rng@50060800 */ \
+	40, /* /soc/rtc@40002800 */ \
+	43, /* /soc/serial@40004400 */ \
+	44, /* /soc/serial@40004800 */ \
+	45, /* /soc/serial@40004c00 */ \
+	46, /* /soc/serial@40008000 */ \
+	47, /* /soc/dma@40020000 */ \
+	50, /* /soc/serial@40013800 */ \
+	51, /* /soc/spi@40003800 */ \
+	52, /* /soc/spi@40003c00 */ \
+	53, /* /soc/timer@e000e010 */ \
+	54, /* /soc/timers@40001000 */ \
+	55, /* /soc/timers@40007c00 */ \
+	57, /* /soc/usb@40006800 */ \
+	58, /* /soc/watchdog@40002c00 */ \
+	59, /* /soc/watchdog@40003000 */ \
+	60, /* /soc/flash-controller@40022000 */ \
+	233, /* /soc/spi@40013000 */ \
+	235, /* /soc/timers@40000000 */ \
+	238, /* /soc/timers@40000400 */ \
+	240, /* /soc/timers@40012c00 */ \
+	242, /* /soc/timers@40014000 */ \
+	244, /* /soc/timers@40014400 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_EXISTS 1
@@ -1150,185 +1148,185 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_SUPPORTS_ORDS \
 	18, /* /soc/pin-controller@48000000/gpio@48000800 */ \
-	20, /* /soc/pin-controller@48000000/gpio@48000000 */ \
-	27, /* /soc/pin-controller@48000000/can1_rx_pa11 */ \
-	28, /* /soc/pin-controller@48000000/can1_tx_pa12 */ \
-	32, /* /soc/pin-controller@48000000/i2c1_scl_pb8 */ \
-	33, /* /soc/pin-controller@48000000/i2c1_sda_pb7 */ \
-	42, /* /soc/pin-controller@48000000/usart2_rx_pa3 */ \
-	43, /* /soc/pin-controller@48000000/usart2_tx_pa2 */ \
-	49, /* /soc/pin-controller@48000000/usart1_rx_pa10 */ \
-	50, /* /soc/pin-controller@48000000/usart1_tx_pa9 */ \
-	65, /* /soc/pin-controller@48000000/adc1_in10_pa5 */ \
-	66, /* /soc/pin-controller@48000000/adc1_in11_pa6 */ \
-	67, /* /soc/pin-controller@48000000/adc1_in12_pa7 */ \
-	68, /* /soc/pin-controller@48000000/adc1_in13_pc4 */ \
-	69, /* /soc/pin-controller@48000000/adc1_in14_pc5 */ \
-	70, /* /soc/pin-controller@48000000/adc1_in15_pb0 */ \
-	71, /* /soc/pin-controller@48000000/adc1_in16_pb1 */ \
-	72, /* /soc/pin-controller@48000000/adc1_in1_pc0 */ \
-	73, /* /soc/pin-controller@48000000/adc1_in2_pc1 */ \
-	74, /* /soc/pin-controller@48000000/adc1_in3_pc2 */ \
-	75, /* /soc/pin-controller@48000000/adc1_in4_pc3 */ \
-	76, /* /soc/pin-controller@48000000/adc1_in5_pa0 */ \
-	77, /* /soc/pin-controller@48000000/adc1_in6_pa1 */ \
-	78, /* /soc/pin-controller@48000000/adc1_in7_pa2 */ \
-	79, /* /soc/pin-controller@48000000/adc1_in8_pa3 */ \
-	80, /* /soc/pin-controller@48000000/adc1_in9_pa4 */ \
-	81, /* /soc/pin-controller@48000000/can1_rx_pb12 */ \
-	82, /* /soc/pin-controller@48000000/can1_rx_pb5 */ \
-	83, /* /soc/pin-controller@48000000/can1_rx_pb8 */ \
-	84, /* /soc/pin-controller@48000000/can1_tx_pb13 */ \
-	85, /* /soc/pin-controller@48000000/can1_tx_pb6 */ \
-	86, /* /soc/pin-controller@48000000/can1_tx_pb9 */ \
-	87, /* /soc/pin-controller@48000000/dac1_out1_pa4 */ \
-	88, /* /soc/pin-controller@48000000/gpio@48000c00 */ \
-	89, /* /soc/pin-controller@48000000/gpio@48001000 */ \
-	90, /* /soc/pin-controller@48000000/gpio@48001c00 */ \
-	91, /* /soc/pin-controller@48000000/i2c1_scl_pa9 */ \
-	92, /* /soc/pin-controller@48000000/i2c1_scl_pb6 */ \
-	93, /* /soc/pin-controller@48000000/i2c1_sda_pa10 */ \
-	94, /* /soc/pin-controller@48000000/i2c1_sda_pb9 */ \
-	95, /* /soc/pin-controller@48000000/i2c2_scl_pb10 */ \
-	96, /* /soc/pin-controller@48000000/i2c2_scl_pb13 */ \
-	97, /* /soc/pin-controller@48000000/i2c2_sda_pb11 */ \
-	98, /* /soc/pin-controller@48000000/i2c2_sda_pb14 */ \
-	99, /* /soc/pin-controller@48000000/i2c3_scl_pa7 */ \
-	100, /* /soc/pin-controller@48000000/i2c3_scl_pc0 */ \
-	101, /* /soc/pin-controller@48000000/i2c3_sda_pb4 */ \
-	102, /* /soc/pin-controller@48000000/i2c3_sda_pc1 */ \
-	103, /* /soc/pin-controller@48000000/i2c4_scl_pb10 */ \
-	104, /* /soc/pin-controller@48000000/i2c4_scl_pb6 */ \
-	105, /* /soc/pin-controller@48000000/i2c4_scl_pc0 */ \
-	106, /* /soc/pin-controller@48000000/i2c4_sda_pb11 */ \
-	107, /* /soc/pin-controller@48000000/i2c4_sda_pb7 */ \
-	108, /* /soc/pin-controller@48000000/i2c4_sda_pc1 */ \
-	109, /* /soc/pin-controller@48000000/lpuart1_cts_pa6 */ \
-	110, /* /soc/pin-controller@48000000/lpuart1_cts_pb13 */ \
-	111, /* /soc/pin-controller@48000000/lpuart1_rts_pb1 */ \
-	112, /* /soc/pin-controller@48000000/lpuart1_rts_pb12 */ \
-	113, /* /soc/pin-controller@48000000/lpuart1_rx_pa3 */ \
-	114, /* /soc/pin-controller@48000000/lpuart1_rx_pb10 */ \
-	115, /* /soc/pin-controller@48000000/lpuart1_rx_pc0 */ \
-	116, /* /soc/pin-controller@48000000/lpuart1_tx_pa2 */ \
-	117, /* /soc/pin-controller@48000000/lpuart1_tx_pb11 */ \
-	118, /* /soc/pin-controller@48000000/lpuart1_tx_pc1 */ \
-	119, /* /soc/pin-controller@48000000/quadspi_bk1_io0_pb1 */ \
-	120, /* /soc/pin-controller@48000000/quadspi_bk1_io1_pb0 */ \
-	121, /* /soc/pin-controller@48000000/quadspi_bk1_io2_pa7 */ \
-	122, /* /soc/pin-controller@48000000/quadspi_bk1_io3_pa6 */ \
-	123, /* /soc/pin-controller@48000000/quadspi_bk1_ncs_pa2 */ \
-	124, /* /soc/pin-controller@48000000/quadspi_bk1_ncs_pb11 */ \
-	125, /* /soc/pin-controller@48000000/quadspi_clk_pa3 */ \
-	126, /* /soc/pin-controller@48000000/quadspi_clk_pb10 */ \
-	127, /* /soc/pin-controller@48000000/sdmmc1_ck_pc12 */ \
-	128, /* /soc/pin-controller@48000000/sdmmc1_cmd_pd2 */ \
-	129, /* /soc/pin-controller@48000000/sdmmc1_d0_pc8 */ \
-	130, /* /soc/pin-controller@48000000/sdmmc1_d1_pc9 */ \
-	131, /* /soc/pin-controller@48000000/sdmmc1_d2_pc10 */ \
-	132, /* /soc/pin-controller@48000000/sdmmc1_d3_pc11 */ \
-	133, /* /soc/pin-controller@48000000/sdmmc1_d4_pb8 */ \
-	134, /* /soc/pin-controller@48000000/sdmmc1_d5_pb9 */ \
-	135, /* /soc/pin-controller@48000000/sdmmc1_d6_pc6 */ \
-	136, /* /soc/pin-controller@48000000/sdmmc1_d7_pc7 */ \
-	137, /* /soc/pin-controller@48000000/spi1_miso_pa11 */ \
-	138, /* /soc/pin-controller@48000000/spi1_miso_pb4 */ \
-	139, /* /soc/pin-controller@48000000/spi1_mosi_pa12 */ \
-	140, /* /soc/pin-controller@48000000/spi1_mosi_pb5 */ \
-	141, /* /soc/pin-controller@48000000/spi1_nss_pa15 */ \
-	142, /* /soc/pin-controller@48000000/spi1_nss_pa4 */ \
-	143, /* /soc/pin-controller@48000000/spi1_nss_pb0 */ \
-	144, /* /soc/pin-controller@48000000/spi1_sck_pa1 */ \
-	145, /* /soc/pin-controller@48000000/spi1_sck_pb3 */ \
-	146, /* /soc/pin-controller@48000000/spi2_miso_pb14 */ \
-	147, /* /soc/pin-controller@48000000/spi2_miso_pc2 */ \
-	148, /* /soc/pin-controller@48000000/spi2_mosi_pb15 */ \
-	149, /* /soc/pin-controller@48000000/spi2_mosi_pc3 */ \
-	150, /* /soc/pin-controller@48000000/spi2_nss_pb12 */ \
-	151, /* /soc/pin-controller@48000000/spi2_nss_pb9 */ \
-	152, /* /soc/pin-controller@48000000/spi2_sck_pb10 */ \
-	153, /* /soc/pin-controller@48000000/spi2_sck_pb13 */ \
-	154, /* /soc/pin-controller@48000000/spi3_miso_pb4 */ \
-	155, /* /soc/pin-controller@48000000/spi3_miso_pc11 */ \
-	156, /* /soc/pin-controller@48000000/spi3_mosi_pb5 */ \
-	157, /* /soc/pin-controller@48000000/spi3_mosi_pc12 */ \
-	158, /* /soc/pin-controller@48000000/spi3_nss_pa15 */ \
-	159, /* /soc/pin-controller@48000000/spi3_nss_pa4 */ \
-	160, /* /soc/pin-controller@48000000/spi3_sck_pb3 */ \
-	161, /* /soc/pin-controller@48000000/spi3_sck_pc10 */ \
-	162, /* /soc/pin-controller@48000000/tim15_ch1_pa2 */ \
-	163, /* /soc/pin-controller@48000000/tim15_ch1_pb14 */ \
-	164, /* /soc/pin-controller@48000000/tim15_ch1n_pa1 */ \
-	165, /* /soc/pin-controller@48000000/tim15_ch1n_pb13 */ \
-	166, /* /soc/pin-controller@48000000/tim15_ch2_pa3 */ \
-	167, /* /soc/pin-controller@48000000/tim15_ch2_pb15 */ \
-	168, /* /soc/pin-controller@48000000/tim16_ch1_pa6 */ \
-	169, /* /soc/pin-controller@48000000/tim16_ch1_pb8 */ \
-	170, /* /soc/pin-controller@48000000/tim16_ch1n_pb6 */ \
-	171, /* /soc/pin-controller@48000000/tim1_ch1_pa8 */ \
-	172, /* /soc/pin-controller@48000000/tim1_ch1n_pa7 */ \
-	173, /* /soc/pin-controller@48000000/tim1_ch1n_pb13 */ \
-	174, /* /soc/pin-controller@48000000/tim1_ch2_pa9 */ \
-	175, /* /soc/pin-controller@48000000/tim1_ch2n_pb0 */ \
-	176, /* /soc/pin-controller@48000000/tim1_ch2n_pb14 */ \
-	177, /* /soc/pin-controller@48000000/tim1_ch3_pa10 */ \
-	178, /* /soc/pin-controller@48000000/tim1_ch3n_pb1 */ \
-	179, /* /soc/pin-controller@48000000/tim1_ch3n_pb15 */ \
-	180, /* /soc/pin-controller@48000000/tim1_ch4_pa11 */ \
-	181, /* /soc/pin-controller@48000000/tim2_ch1_pa15 */ \
-	182, /* /soc/pin-controller@48000000/tim2_ch1_pa5 */ \
-	183, /* /soc/pin-controller@48000000/tim2_ch2_pa1 */ \
-	184, /* /soc/pin-controller@48000000/tim2_ch2_pb3 */ \
-	185, /* /soc/pin-controller@48000000/tim2_ch3_pa2 */ \
-	186, /* /soc/pin-controller@48000000/tim2_ch3_pb10 */ \
-	187, /* /soc/pin-controller@48000000/tim2_ch4_pa3 */ \
-	188, /* /soc/pin-controller@48000000/tim2_ch4_pb11 */ \
-	189, /* /soc/pin-controller@48000000/tim3_ch1_pa6 */ \
-	190, /* /soc/pin-controller@48000000/tim3_ch1_pb4 */ \
-	191, /* /soc/pin-controller@48000000/tim3_ch1_pc6 */ \
-	192, /* /soc/pin-controller@48000000/tim3_ch2_pa7 */ \
-	193, /* /soc/pin-controller@48000000/tim3_ch2_pb5 */ \
-	194, /* /soc/pin-controller@48000000/tim3_ch2_pc7 */ \
-	195, /* /soc/pin-controller@48000000/tim3_ch3_pb0 */ \
-	196, /* /soc/pin-controller@48000000/tim3_ch3_pc8 */ \
-	197, /* /soc/pin-controller@48000000/tim3_ch4_pb1 */ \
-	198, /* /soc/pin-controller@48000000/tim3_ch4_pc9 */ \
-	199, /* /soc/pin-controller@48000000/uart4_cts_pb7 */ \
-	200, /* /soc/pin-controller@48000000/uart4_rts_pa15 */ \
-	201, /* /soc/pin-controller@48000000/uart4_rx_pa1 */ \
-	202, /* /soc/pin-controller@48000000/uart4_rx_pc11 */ \
-	203, /* /soc/pin-controller@48000000/uart4_tx_pa0 */ \
-	204, /* /soc/pin-controller@48000000/uart4_tx_pc10 */ \
-	205, /* /soc/pin-controller@48000000/usart1_cts_pa11 */ \
-	206, /* /soc/pin-controller@48000000/usart1_cts_pb4 */ \
-	207, /* /soc/pin-controller@48000000/usart1_rts_pa12 */ \
-	208, /* /soc/pin-controller@48000000/usart1_rts_pb3 */ \
-	209, /* /soc/pin-controller@48000000/usart1_rx_pb7 */ \
-	210, /* /soc/pin-controller@48000000/usart1_tx_pb6 */ \
-	211, /* /soc/pin-controller@48000000/usart2_cts_pa0 */ \
-	212, /* /soc/pin-controller@48000000/usart2_rts_pa1 */ \
-	213, /* /soc/pin-controller@48000000/usart2_rx_pa15 */ \
-	214, /* /soc/pin-controller@48000000/usart3_cts_pa6 */ \
-	215, /* /soc/pin-controller@48000000/usart3_cts_pb13 */ \
-	216, /* /soc/pin-controller@48000000/usart3_rts_pa15 */ \
-	217, /* /soc/pin-controller@48000000/usart3_rts_pb1 */ \
-	218, /* /soc/pin-controller@48000000/usart3_rts_pb14 */ \
-	219, /* /soc/pin-controller@48000000/usart3_rts_pd2 */ \
-	220, /* /soc/pin-controller@48000000/usart3_rx_pb11 */ \
-	221, /* /soc/pin-controller@48000000/usart3_rx_pc11 */ \
-	222, /* /soc/pin-controller@48000000/usart3_rx_pc5 */ \
-	223, /* /soc/pin-controller@48000000/usart3_tx_pb10 */ \
-	224, /* /soc/pin-controller@48000000/usart3_tx_pc10 */ \
-	225, /* /soc/pin-controller@48000000/usart3_tx_pc4 */ \
-	226, /* /soc/pin-controller@48000000/usb_dm_pa11 */ \
-	227, /* /soc/pin-controller@48000000/usb_dp_pa12 */ \
-	228, /* /soc/pin-controller@48000000/usb_noe_pa13 */ \
-	229, /* /soc/pin-controller@48000000/usb_noe_pc9 */ \
-	230, /* /soc/pin-controller@48000000/gpio@48000400 */ \
-	231, /* /soc/pin-controller@48000000/spi1_miso_pa6 */ \
-	232, /* /soc/pin-controller@48000000/spi1_mosi_pa7 */ \
-	233, /* /soc/pin-controller@48000000/spi1_sck_pa5 */ \
-	237, /* /soc/pin-controller@48000000/tim2_ch1_pa0 */
+	21, /* /soc/pin-controller@48000000/gpio@48000000 */ \
+	26, /* /soc/pin-controller@48000000/can1_rx_pa11 */ \
+	27, /* /soc/pin-controller@48000000/can1_tx_pa12 */ \
+	31, /* /soc/pin-controller@48000000/i2c1_scl_pb8 */ \
+	32, /* /soc/pin-controller@48000000/i2c1_sda_pb7 */ \
+	41, /* /soc/pin-controller@48000000/usart2_rx_pa3 */ \
+	42, /* /soc/pin-controller@48000000/usart2_tx_pa2 */ \
+	48, /* /soc/pin-controller@48000000/usart1_rx_pa10 */ \
+	49, /* /soc/pin-controller@48000000/usart1_tx_pa9 */ \
+	64, /* /soc/pin-controller@48000000/adc1_in10_pa5 */ \
+	65, /* /soc/pin-controller@48000000/adc1_in11_pa6 */ \
+	66, /* /soc/pin-controller@48000000/adc1_in12_pa7 */ \
+	67, /* /soc/pin-controller@48000000/adc1_in13_pc4 */ \
+	68, /* /soc/pin-controller@48000000/adc1_in14_pc5 */ \
+	69, /* /soc/pin-controller@48000000/adc1_in15_pb0 */ \
+	70, /* /soc/pin-controller@48000000/adc1_in16_pb1 */ \
+	71, /* /soc/pin-controller@48000000/adc1_in1_pc0 */ \
+	72, /* /soc/pin-controller@48000000/adc1_in2_pc1 */ \
+	73, /* /soc/pin-controller@48000000/adc1_in3_pc2 */ \
+	74, /* /soc/pin-controller@48000000/adc1_in4_pc3 */ \
+	75, /* /soc/pin-controller@48000000/adc1_in5_pa0 */ \
+	76, /* /soc/pin-controller@48000000/adc1_in6_pa1 */ \
+	77, /* /soc/pin-controller@48000000/adc1_in7_pa2 */ \
+	78, /* /soc/pin-controller@48000000/adc1_in8_pa3 */ \
+	79, /* /soc/pin-controller@48000000/adc1_in9_pa4 */ \
+	80, /* /soc/pin-controller@48000000/can1_rx_pb12 */ \
+	81, /* /soc/pin-controller@48000000/can1_rx_pb5 */ \
+	82, /* /soc/pin-controller@48000000/can1_rx_pb8 */ \
+	83, /* /soc/pin-controller@48000000/can1_tx_pb13 */ \
+	84, /* /soc/pin-controller@48000000/can1_tx_pb6 */ \
+	85, /* /soc/pin-controller@48000000/can1_tx_pb9 */ \
+	86, /* /soc/pin-controller@48000000/dac1_out1_pa4 */ \
+	87, /* /soc/pin-controller@48000000/gpio@48000c00 */ \
+	88, /* /soc/pin-controller@48000000/gpio@48001000 */ \
+	89, /* /soc/pin-controller@48000000/gpio@48001c00 */ \
+	90, /* /soc/pin-controller@48000000/i2c1_scl_pa9 */ \
+	91, /* /soc/pin-controller@48000000/i2c1_scl_pb6 */ \
+	92, /* /soc/pin-controller@48000000/i2c1_sda_pa10 */ \
+	93, /* /soc/pin-controller@48000000/i2c1_sda_pb9 */ \
+	94, /* /soc/pin-controller@48000000/i2c2_scl_pb10 */ \
+	95, /* /soc/pin-controller@48000000/i2c2_scl_pb13 */ \
+	96, /* /soc/pin-controller@48000000/i2c2_sda_pb11 */ \
+	97, /* /soc/pin-controller@48000000/i2c2_sda_pb14 */ \
+	98, /* /soc/pin-controller@48000000/i2c3_scl_pa7 */ \
+	99, /* /soc/pin-controller@48000000/i2c3_scl_pc0 */ \
+	100, /* /soc/pin-controller@48000000/i2c3_sda_pb4 */ \
+	101, /* /soc/pin-controller@48000000/i2c3_sda_pc1 */ \
+	102, /* /soc/pin-controller@48000000/i2c4_scl_pb10 */ \
+	103, /* /soc/pin-controller@48000000/i2c4_scl_pb6 */ \
+	104, /* /soc/pin-controller@48000000/i2c4_scl_pc0 */ \
+	105, /* /soc/pin-controller@48000000/i2c4_sda_pb11 */ \
+	106, /* /soc/pin-controller@48000000/i2c4_sda_pb7 */ \
+	107, /* /soc/pin-controller@48000000/i2c4_sda_pc1 */ \
+	108, /* /soc/pin-controller@48000000/lpuart1_cts_pa6 */ \
+	109, /* /soc/pin-controller@48000000/lpuart1_cts_pb13 */ \
+	110, /* /soc/pin-controller@48000000/lpuart1_rts_pb1 */ \
+	111, /* /soc/pin-controller@48000000/lpuart1_rts_pb12 */ \
+	112, /* /soc/pin-controller@48000000/lpuart1_rx_pa3 */ \
+	113, /* /soc/pin-controller@48000000/lpuart1_rx_pb10 */ \
+	114, /* /soc/pin-controller@48000000/lpuart1_rx_pc0 */ \
+	115, /* /soc/pin-controller@48000000/lpuart1_tx_pa2 */ \
+	116, /* /soc/pin-controller@48000000/lpuart1_tx_pb11 */ \
+	117, /* /soc/pin-controller@48000000/lpuart1_tx_pc1 */ \
+	118, /* /soc/pin-controller@48000000/quadspi_bk1_io0_pb1 */ \
+	119, /* /soc/pin-controller@48000000/quadspi_bk1_io1_pb0 */ \
+	120, /* /soc/pin-controller@48000000/quadspi_bk1_io2_pa7 */ \
+	121, /* /soc/pin-controller@48000000/quadspi_bk1_io3_pa6 */ \
+	122, /* /soc/pin-controller@48000000/quadspi_bk1_ncs_pa2 */ \
+	123, /* /soc/pin-controller@48000000/quadspi_bk1_ncs_pb11 */ \
+	124, /* /soc/pin-controller@48000000/quadspi_clk_pa3 */ \
+	125, /* /soc/pin-controller@48000000/quadspi_clk_pb10 */ \
+	126, /* /soc/pin-controller@48000000/sdmmc1_ck_pc12 */ \
+	127, /* /soc/pin-controller@48000000/sdmmc1_cmd_pd2 */ \
+	128, /* /soc/pin-controller@48000000/sdmmc1_d0_pc8 */ \
+	129, /* /soc/pin-controller@48000000/sdmmc1_d1_pc9 */ \
+	130, /* /soc/pin-controller@48000000/sdmmc1_d2_pc10 */ \
+	131, /* /soc/pin-controller@48000000/sdmmc1_d3_pc11 */ \
+	132, /* /soc/pin-controller@48000000/sdmmc1_d4_pb8 */ \
+	133, /* /soc/pin-controller@48000000/sdmmc1_d5_pb9 */ \
+	134, /* /soc/pin-controller@48000000/sdmmc1_d6_pc6 */ \
+	135, /* /soc/pin-controller@48000000/sdmmc1_d7_pc7 */ \
+	136, /* /soc/pin-controller@48000000/spi1_miso_pa11 */ \
+	137, /* /soc/pin-controller@48000000/spi1_miso_pb4 */ \
+	138, /* /soc/pin-controller@48000000/spi1_mosi_pa12 */ \
+	139, /* /soc/pin-controller@48000000/spi1_mosi_pb5 */ \
+	140, /* /soc/pin-controller@48000000/spi1_nss_pa15 */ \
+	141, /* /soc/pin-controller@48000000/spi1_nss_pa4 */ \
+	142, /* /soc/pin-controller@48000000/spi1_nss_pb0 */ \
+	143, /* /soc/pin-controller@48000000/spi1_sck_pa1 */ \
+	144, /* /soc/pin-controller@48000000/spi1_sck_pb3 */ \
+	145, /* /soc/pin-controller@48000000/spi2_miso_pb14 */ \
+	146, /* /soc/pin-controller@48000000/spi2_miso_pc2 */ \
+	147, /* /soc/pin-controller@48000000/spi2_mosi_pb15 */ \
+	148, /* /soc/pin-controller@48000000/spi2_mosi_pc3 */ \
+	149, /* /soc/pin-controller@48000000/spi2_nss_pb12 */ \
+	150, /* /soc/pin-controller@48000000/spi2_nss_pb9 */ \
+	151, /* /soc/pin-controller@48000000/spi2_sck_pb10 */ \
+	152, /* /soc/pin-controller@48000000/spi2_sck_pb13 */ \
+	153, /* /soc/pin-controller@48000000/spi3_miso_pb4 */ \
+	154, /* /soc/pin-controller@48000000/spi3_miso_pc11 */ \
+	155, /* /soc/pin-controller@48000000/spi3_mosi_pb5 */ \
+	156, /* /soc/pin-controller@48000000/spi3_mosi_pc12 */ \
+	157, /* /soc/pin-controller@48000000/spi3_nss_pa15 */ \
+	158, /* /soc/pin-controller@48000000/spi3_nss_pa4 */ \
+	159, /* /soc/pin-controller@48000000/spi3_sck_pb3 */ \
+	160, /* /soc/pin-controller@48000000/spi3_sck_pc10 */ \
+	161, /* /soc/pin-controller@48000000/tim15_ch1_pa2 */ \
+	162, /* /soc/pin-controller@48000000/tim15_ch1_pb14 */ \
+	163, /* /soc/pin-controller@48000000/tim15_ch1n_pa1 */ \
+	164, /* /soc/pin-controller@48000000/tim15_ch1n_pb13 */ \
+	165, /* /soc/pin-controller@48000000/tim15_ch2_pa3 */ \
+	166, /* /soc/pin-controller@48000000/tim15_ch2_pb15 */ \
+	167, /* /soc/pin-controller@48000000/tim16_ch1_pa6 */ \
+	168, /* /soc/pin-controller@48000000/tim16_ch1_pb8 */ \
+	169, /* /soc/pin-controller@48000000/tim16_ch1n_pb6 */ \
+	170, /* /soc/pin-controller@48000000/tim1_ch1_pa8 */ \
+	171, /* /soc/pin-controller@48000000/tim1_ch1n_pa7 */ \
+	172, /* /soc/pin-controller@48000000/tim1_ch1n_pb13 */ \
+	173, /* /soc/pin-controller@48000000/tim1_ch2_pa9 */ \
+	174, /* /soc/pin-controller@48000000/tim1_ch2n_pb0 */ \
+	175, /* /soc/pin-controller@48000000/tim1_ch2n_pb14 */ \
+	176, /* /soc/pin-controller@48000000/tim1_ch3_pa10 */ \
+	177, /* /soc/pin-controller@48000000/tim1_ch3n_pb1 */ \
+	178, /* /soc/pin-controller@48000000/tim1_ch3n_pb15 */ \
+	179, /* /soc/pin-controller@48000000/tim1_ch4_pa11 */ \
+	180, /* /soc/pin-controller@48000000/tim2_ch1_pa15 */ \
+	181, /* /soc/pin-controller@48000000/tim2_ch1_pa5 */ \
+	182, /* /soc/pin-controller@48000000/tim2_ch2_pa1 */ \
+	183, /* /soc/pin-controller@48000000/tim2_ch2_pb3 */ \
+	184, /* /soc/pin-controller@48000000/tim2_ch3_pa2 */ \
+	185, /* /soc/pin-controller@48000000/tim2_ch3_pb10 */ \
+	186, /* /soc/pin-controller@48000000/tim2_ch4_pa3 */ \
+	187, /* /soc/pin-controller@48000000/tim2_ch4_pb11 */ \
+	188, /* /soc/pin-controller@48000000/tim3_ch1_pa6 */ \
+	189, /* /soc/pin-controller@48000000/tim3_ch1_pb4 */ \
+	190, /* /soc/pin-controller@48000000/tim3_ch1_pc6 */ \
+	191, /* /soc/pin-controller@48000000/tim3_ch2_pa7 */ \
+	192, /* /soc/pin-controller@48000000/tim3_ch2_pb5 */ \
+	193, /* /soc/pin-controller@48000000/tim3_ch2_pc7 */ \
+	194, /* /soc/pin-controller@48000000/tim3_ch3_pb0 */ \
+	195, /* /soc/pin-controller@48000000/tim3_ch3_pc8 */ \
+	196, /* /soc/pin-controller@48000000/tim3_ch4_pb1 */ \
+	197, /* /soc/pin-controller@48000000/tim3_ch4_pc9 */ \
+	198, /* /soc/pin-controller@48000000/uart4_cts_pb7 */ \
+	199, /* /soc/pin-controller@48000000/uart4_rts_pa15 */ \
+	200, /* /soc/pin-controller@48000000/uart4_rx_pa1 */ \
+	201, /* /soc/pin-controller@48000000/uart4_rx_pc11 */ \
+	202, /* /soc/pin-controller@48000000/uart4_tx_pa0 */ \
+	203, /* /soc/pin-controller@48000000/uart4_tx_pc10 */ \
+	204, /* /soc/pin-controller@48000000/usart1_cts_pa11 */ \
+	205, /* /soc/pin-controller@48000000/usart1_cts_pb4 */ \
+	206, /* /soc/pin-controller@48000000/usart1_rts_pa12 */ \
+	207, /* /soc/pin-controller@48000000/usart1_rts_pb3 */ \
+	208, /* /soc/pin-controller@48000000/usart1_rx_pb7 */ \
+	209, /* /soc/pin-controller@48000000/usart1_tx_pb6 */ \
+	210, /* /soc/pin-controller@48000000/usart2_cts_pa0 */ \
+	211, /* /soc/pin-controller@48000000/usart2_rts_pa1 */ \
+	212, /* /soc/pin-controller@48000000/usart2_rx_pa15 */ \
+	213, /* /soc/pin-controller@48000000/usart3_cts_pa6 */ \
+	214, /* /soc/pin-controller@48000000/usart3_cts_pb13 */ \
+	215, /* /soc/pin-controller@48000000/usart3_rts_pa15 */ \
+	216, /* /soc/pin-controller@48000000/usart3_rts_pb1 */ \
+	217, /* /soc/pin-controller@48000000/usart3_rts_pb14 */ \
+	218, /* /soc/pin-controller@48000000/usart3_rts_pd2 */ \
+	219, /* /soc/pin-controller@48000000/usart3_rx_pb11 */ \
+	220, /* /soc/pin-controller@48000000/usart3_rx_pc11 */ \
+	221, /* /soc/pin-controller@48000000/usart3_rx_pc5 */ \
+	222, /* /soc/pin-controller@48000000/usart3_tx_pb10 */ \
+	223, /* /soc/pin-controller@48000000/usart3_tx_pc10 */ \
+	224, /* /soc/pin-controller@48000000/usart3_tx_pc4 */ \
+	225, /* /soc/pin-controller@48000000/usb_dm_pa11 */ \
+	226, /* /soc/pin-controller@48000000/usb_dp_pa12 */ \
+	227, /* /soc/pin-controller@48000000/usb_noe_pa13 */ \
+	228, /* /soc/pin-controller@48000000/usb_noe_pc9 */ \
+	229, /* /soc/pin-controller@48000000/gpio@48000400 */ \
+	230, /* /soc/pin-controller@48000000/spi1_miso_pa6 */ \
+	231, /* /soc/pin-controller@48000000/spi1_mosi_pa7 */ \
+	232, /* /soc/pin-controller@48000000/spi1_sck_pa5 */ \
+	236, /* /soc/pin-controller@48000000/tim2_ch1_pa0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_EXISTS 1
@@ -1566,42 +1564,42 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_rcc_40021000_SUPPORTS_ORDS \
 	18, /* /soc/pin-controller@48000000/gpio@48000800 */ \
-	20, /* /soc/pin-controller@48000000/gpio@48000000 */ \
-	25, /* /soc/adc@50040000 */ \
-	26, /* /soc/adc@50040100 */ \
-	29, /* /soc/can@40006400 */ \
-	30, /* /soc/dac@40007400 */ \
-	31, /* /soc/dma@40020400 */ \
-	34, /* /soc/i2c@40005400 */ \
-	35, /* /soc/i2c@40005800 */ \
-	36, /* /soc/i2c@40005c00 */ \
-	37, /* /soc/i2c@40008400 */ \
-	39, /* /soc/quadspi@a0001000 */ \
-	40, /* /soc/rng@50060800 */ \
-	41, /* /soc/rtc@40002800 */ \
-	44, /* /soc/serial@40004400 */ \
-	45, /* /soc/serial@40004800 */ \
-	46, /* /soc/serial@40004c00 */ \
-	47, /* /soc/serial@40008000 */ \
-	48, /* /soc/dma@40020000 */ \
-	51, /* /soc/serial@40013800 */ \
-	52, /* /soc/spi@40003800 */ \
-	53, /* /soc/spi@40003c00 */ \
-	55, /* /soc/timers@40001000 */ \
-	56, /* /soc/timers@40007c00 */ \
-	58, /* /soc/usb@40006800 */ \
-	59, /* /soc/watchdog@40002c00 */ \
-	61, /* /soc/flash-controller@40022000 */ \
-	88, /* /soc/pin-controller@48000000/gpio@48000c00 */ \
-	89, /* /soc/pin-controller@48000000/gpio@48001000 */ \
-	90, /* /soc/pin-controller@48000000/gpio@48001c00 */ \
-	230, /* /soc/pin-controller@48000000/gpio@48000400 */ \
-	234, /* /soc/spi@40013000 */ \
-	236, /* /soc/timers@40000000 */ \
-	239, /* /soc/timers@40000400 */ \
-	241, /* /soc/timers@40012c00 */ \
-	243, /* /soc/timers@40014000 */ \
-	245, /* /soc/timers@40014400 */
+	21, /* /soc/pin-controller@48000000/gpio@48000000 */ \
+	24, /* /soc/adc@50040000 */ \
+	25, /* /soc/adc@50040100 */ \
+	28, /* /soc/can@40006400 */ \
+	29, /* /soc/dac@40007400 */ \
+	30, /* /soc/dma@40020400 */ \
+	33, /* /soc/i2c@40005400 */ \
+	34, /* /soc/i2c@40005800 */ \
+	35, /* /soc/i2c@40005c00 */ \
+	36, /* /soc/i2c@40008400 */ \
+	38, /* /soc/quadspi@a0001000 */ \
+	39, /* /soc/rng@50060800 */ \
+	40, /* /soc/rtc@40002800 */ \
+	43, /* /soc/serial@40004400 */ \
+	44, /* /soc/serial@40004800 */ \
+	45, /* /soc/serial@40004c00 */ \
+	46, /* /soc/serial@40008000 */ \
+	47, /* /soc/dma@40020000 */ \
+	50, /* /soc/serial@40013800 */ \
+	51, /* /soc/spi@40003800 */ \
+	52, /* /soc/spi@40003c00 */ \
+	54, /* /soc/timers@40001000 */ \
+	55, /* /soc/timers@40007c00 */ \
+	57, /* /soc/usb@40006800 */ \
+	58, /* /soc/watchdog@40002c00 */ \
+	60, /* /soc/flash-controller@40022000 */ \
+	87, /* /soc/pin-controller@48000000/gpio@48000c00 */ \
+	88, /* /soc/pin-controller@48000000/gpio@48001000 */ \
+	89, /* /soc/pin-controller@48000000/gpio@48001c00 */ \
+	229, /* /soc/pin-controller@48000000/gpio@48000400 */ \
+	233, /* /soc/spi@40013000 */ \
+	235, /* /soc/timers@40000000 */ \
+	238, /* /soc/timers@40000400 */ \
+	240, /* /soc/timers@40012c00 */ \
+	242, /* /soc/timers@40014000 */ \
+	244, /* /soc/timers@40014400 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_rcc_40021000_EXISTS 1
@@ -1711,7 +1709,7 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000800_SUPPORTS_ORDS \
 	19, /* /gpio_keys/button */ \
-	235, /* /soc/spi@40013000/sx1278@0 */
+	234, /* /soc/spi@40013000/sx1278@0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000800_EXISTS 1
@@ -1854,6 +1852,59 @@
 #define DT_N_S_gpio_keys_S_button_P_label_EXISTS 1
 
 /*
+ * Devicetree node: /leds
+ *
+ * Node identifier: DT_N_S_leds
+ *
+ * Binding (compatible = gpio-leds):
+ *   /home/rts/zephyr-rts-master/zephyr/dts/bindings/gpio/gpio-leds.yaml
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_leds_PATH "/leds"
+
+/* Node's name with unit-address: */
+#define DT_N_S_leds_FULL_NAME "leds"
+
+/* Node parent (/) identifier: */
+#define DT_N_S_leds_PARENT DT_N
+#define DT_N_S_leds_FOREACH_CHILD(fn) fn(DT_N_S_leds_S_led_0)
+#define DT_N_S_leds_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_leds_S_led_0, __VA_ARGS__)
+#define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_leds_S_led_0) 
+#define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_leds_S_led_0, __VA_ARGS__) 
+
+/* Node's dependency ordinal: */
+#define DT_N_S_leds_ORD 20
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_leds_REQUIRES_ORDS \
+	0, /* / */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_leds_SUPPORTS_ORDS \
+	22, /* /leds/led_0 */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_leds_EXISTS 1
+#define DT_N_INST_0_gpio_leds DT_N_S_leds
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_leds_REG_NUM 0
+#define DT_N_S_leds_RANGES_NUM 0
+#define DT_N_S_leds_FOREACH_RANGE(fn) 
+#define DT_N_S_leds_IRQ_NUM 0
+#define DT_N_S_leds_COMPAT_MATCHES_gpio_leds 1
+#define DT_N_S_leds_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_leds_PINCTRL_NUM 0
+
+/* (No generic property macros) */
+
+/*
  * Devicetree node: /soc/pin-controller@48000000/gpio@48000000
  *
  * Node identifier: DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000000
@@ -1879,7 +1930,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000000_ORD 20
+#define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000000_ORD 21
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000000_REQUIRES_ORDS \
@@ -1888,8 +1939,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000000_SUPPORTS_ORDS \
-	21, /* /gpio_keys/state_pin */ \
-	23, /* /leds/led_0 */
+	22, /* /leds/led_0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000000_EXISTS 1
@@ -1960,133 +2010,6 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000000_P_wakeup_source_EXISTS 1
 
 /*
- * Devicetree node: /gpio_keys/state_pin
- *
- * Node identifier: DT_N_S_gpio_keys_S_state_pin
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_gpio_keys_S_state_pin_PATH "/gpio_keys/state_pin"
-
-/* Node's name with unit-address: */
-#define DT_N_S_gpio_keys_S_state_pin_FULL_NAME "state_pin"
-
-/* Node parent (/gpio_keys) identifier: */
-#define DT_N_S_gpio_keys_S_state_pin_PARENT DT_N_S_gpio_keys
-#define DT_N_S_gpio_keys_S_state_pin_FOREACH_CHILD(fn) 
-#define DT_N_S_gpio_keys_S_state_pin_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_gpio_keys_S_state_pin_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_gpio_keys_S_state_pin_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-
-/* Node's dependency ordinal: */
-#define DT_N_S_gpio_keys_S_state_pin_ORD 21
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_gpio_keys_S_state_pin_REQUIRES_ORDS \
-	12, /* /gpio_keys */ \
-	20, /* /soc/pin-controller@48000000/gpio@48000000 */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_gpio_keys_S_state_pin_SUPPORTS_ORDS /* nothing */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_gpio_keys_S_state_pin_EXISTS 1
-#define DT_N_ALIAS_state         DT_N_S_gpio_keys_S_state_pin
-#define DT_N_NODELABEL_state_pin DT_N_S_gpio_keys_S_state_pin
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_gpio_keys_S_state_pin_REG_NUM 0
-#define DT_N_S_gpio_keys_S_state_pin_RANGES_NUM 0
-#define DT_N_S_gpio_keys_S_state_pin_FOREACH_RANGE(fn) 
-#define DT_N_S_gpio_keys_S_state_pin_IRQ_NUM 0
-#define DT_N_S_gpio_keys_S_state_pin_STATUS_okay 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_gpio_keys_S_state_pin_PINCTRL_NUM 0
-
-/* Generic property macros: */
-#define DT_N_S_gpio_keys_S_state_pin_P_gpios_IDX_0_EXISTS 1
-#define DT_N_S_gpio_keys_S_state_pin_P_gpios_IDX_0_PH DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000000
-#define DT_N_S_gpio_keys_S_state_pin_P_gpios_IDX_0_VAL_pin 0
-#define DT_N_S_gpio_keys_S_state_pin_P_gpios_IDX_0_VAL_pin_EXISTS 1
-#define DT_N_S_gpio_keys_S_state_pin_P_gpios_IDX_0_VAL_flags 32
-#define DT_N_S_gpio_keys_S_state_pin_P_gpios_IDX_0_VAL_flags_EXISTS 1
-#define DT_N_S_gpio_keys_S_state_pin_P_gpios_FOREACH_PROP_ELEM(fn) fn(DT_N_S_gpio_keys_S_state_pin, gpios, 0)
-#define DT_N_S_gpio_keys_S_state_pin_P_gpios_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_gpio_keys_S_state_pin, gpios, 0, __VA_ARGS__)
-#define DT_N_S_gpio_keys_S_state_pin_P_gpios_LEN 1
-#define DT_N_S_gpio_keys_S_state_pin_P_gpios_EXISTS 1
-#define DT_N_S_gpio_keys_S_state_pin_P_label "STATE"
-#define DT_N_S_gpio_keys_S_state_pin_P_label_STRING_TOKEN STATE
-#define DT_N_S_gpio_keys_S_state_pin_P_label_STRING_UPPER_TOKEN STATE
-#define DT_N_S_gpio_keys_S_state_pin_P_label_FOREACH_PROP_ELEM(fn) fn(DT_N_S_gpio_keys_S_state_pin, label, 0) \
-	fn(DT_N_S_gpio_keys_S_state_pin, label, 1) \
-	fn(DT_N_S_gpio_keys_S_state_pin, label, 2) \
-	fn(DT_N_S_gpio_keys_S_state_pin, label, 3) \
-	fn(DT_N_S_gpio_keys_S_state_pin, label, 4)
-#define DT_N_S_gpio_keys_S_state_pin_P_label_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_gpio_keys_S_state_pin, label, 0, __VA_ARGS__) \
-	fn(DT_N_S_gpio_keys_S_state_pin, label, 1, __VA_ARGS__) \
-	fn(DT_N_S_gpio_keys_S_state_pin, label, 2, __VA_ARGS__) \
-	fn(DT_N_S_gpio_keys_S_state_pin, label, 3, __VA_ARGS__) \
-	fn(DT_N_S_gpio_keys_S_state_pin, label, 4, __VA_ARGS__)
-#define DT_N_S_gpio_keys_S_state_pin_P_label_EXISTS 1
-
-/*
- * Devicetree node: /leds
- *
- * Node identifier: DT_N_S_leds
- *
- * Binding (compatible = gpio-leds):
- *   /home/rts/zephyr-rts-master/zephyr/dts/bindings/gpio/gpio-leds.yaml
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_leds_PATH "/leds"
-
-/* Node's name with unit-address: */
-#define DT_N_S_leds_FULL_NAME "leds"
-
-/* Node parent (/) identifier: */
-#define DT_N_S_leds_PARENT DT_N
-#define DT_N_S_leds_FOREACH_CHILD(fn) fn(DT_N_S_leds_S_led_0)
-#define DT_N_S_leds_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_leds_S_led_0, __VA_ARGS__)
-#define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_leds_S_led_0) 
-#define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_leds_S_led_0, __VA_ARGS__) 
-
-/* Node's dependency ordinal: */
-#define DT_N_S_leds_ORD 22
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_leds_REQUIRES_ORDS \
-	0, /* / */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_leds_SUPPORTS_ORDS \
-	23, /* /leds/led_0 */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_leds_EXISTS 1
-#define DT_N_INST_0_gpio_leds DT_N_S_leds
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_leds_REG_NUM 0
-#define DT_N_S_leds_RANGES_NUM 0
-#define DT_N_S_leds_FOREACH_RANGE(fn) 
-#define DT_N_S_leds_IRQ_NUM 0
-#define DT_N_S_leds_COMPAT_MATCHES_gpio_leds 1
-#define DT_N_S_leds_STATUS_okay 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_leds_PINCTRL_NUM 0
-
-/* (No generic property macros) */
-
-/*
  * Devicetree node: /leds/led_0
  *
  * Node identifier: DT_N_S_leds_S_led_0
@@ -2109,12 +2032,12 @@
 #define DT_N_S_leds_S_led_0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_leds_S_led_0_ORD 23
+#define DT_N_S_leds_S_led_0_ORD 22
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_leds_S_led_0_REQUIRES_ORDS \
-	20, /* /soc/pin-controller@48000000/gpio@48000000 */ \
-	22, /* /leds */
+	20, /* /leds */ \
+	21, /* /soc/pin-controller@48000000/gpio@48000000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_leds_S_led_0_SUPPORTS_ORDS /* nothing */
@@ -2192,7 +2115,7 @@
 #define DT_N_S_soc_S_interrupt_controller_e000e100_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_interrupt_controller_e000e100_ORD 24
+#define DT_N_S_soc_S_interrupt_controller_e000e100_ORD 23
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_interrupt_controller_e000e100_REQUIRES_ORDS \
@@ -2200,36 +2123,36 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_interrupt_controller_e000e100_SUPPORTS_ORDS \
-	25, /* /soc/adc@50040000 */ \
-	26, /* /soc/adc@50040100 */ \
-	29, /* /soc/can@40006400 */ \
-	31, /* /soc/dma@40020400 */ \
-	34, /* /soc/i2c@40005400 */ \
-	35, /* /soc/i2c@40005800 */ \
-	36, /* /soc/i2c@40005c00 */ \
-	37, /* /soc/i2c@40008400 */ \
-	39, /* /soc/quadspi@a0001000 */ \
-	40, /* /soc/rng@50060800 */ \
-	41, /* /soc/rtc@40002800 */ \
-	44, /* /soc/serial@40004400 */ \
-	45, /* /soc/serial@40004800 */ \
-	46, /* /soc/serial@40004c00 */ \
-	47, /* /soc/serial@40008000 */ \
-	48, /* /soc/dma@40020000 */ \
-	51, /* /soc/serial@40013800 */ \
-	52, /* /soc/spi@40003800 */ \
-	53, /* /soc/spi@40003c00 */ \
-	55, /* /soc/timers@40001000 */ \
-	56, /* /soc/timers@40007c00 */ \
-	58, /* /soc/usb@40006800 */ \
-	59, /* /soc/watchdog@40002c00 */ \
-	61, /* /soc/flash-controller@40022000 */ \
-	234, /* /soc/spi@40013000 */ \
-	236, /* /soc/timers@40000000 */ \
-	239, /* /soc/timers@40000400 */ \
-	241, /* /soc/timers@40012c00 */ \
-	243, /* /soc/timers@40014000 */ \
-	245, /* /soc/timers@40014400 */
+	24, /* /soc/adc@50040000 */ \
+	25, /* /soc/adc@50040100 */ \
+	28, /* /soc/can@40006400 */ \
+	30, /* /soc/dma@40020400 */ \
+	33, /* /soc/i2c@40005400 */ \
+	34, /* /soc/i2c@40005800 */ \
+	35, /* /soc/i2c@40005c00 */ \
+	36, /* /soc/i2c@40008400 */ \
+	38, /* /soc/quadspi@a0001000 */ \
+	39, /* /soc/rng@50060800 */ \
+	40, /* /soc/rtc@40002800 */ \
+	43, /* /soc/serial@40004400 */ \
+	44, /* /soc/serial@40004800 */ \
+	45, /* /soc/serial@40004c00 */ \
+	46, /* /soc/serial@40008000 */ \
+	47, /* /soc/dma@40020000 */ \
+	50, /* /soc/serial@40013800 */ \
+	51, /* /soc/spi@40003800 */ \
+	52, /* /soc/spi@40003c00 */ \
+	54, /* /soc/timers@40001000 */ \
+	55, /* /soc/timers@40007c00 */ \
+	57, /* /soc/usb@40006800 */ \
+	58, /* /soc/watchdog@40002c00 */ \
+	60, /* /soc/flash-controller@40022000 */ \
+	233, /* /soc/spi@40013000 */ \
+	235, /* /soc/timers@40000000 */ \
+	238, /* /soc/timers@40000400 */ \
+	240, /* /soc/timers@40012c00 */ \
+	242, /* /soc/timers@40014000 */ \
+	244, /* /soc/timers@40014400 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_interrupt_controller_e000e100_EXISTS 1
@@ -2301,13 +2224,13 @@
 #define DT_N_S_soc_S_adc_50040000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_adc_50040000_ORD 25
+#define DT_N_S_soc_S_adc_50040000_ORD 24
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_adc_50040000_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_adc_50040000_SUPPORTS_ORDS /* nothing */
@@ -2441,13 +2364,13 @@
 #define DT_N_S_soc_S_adc_50040100_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_adc_50040100_ORD 26
+#define DT_N_S_soc_S_adc_50040100_ORD 25
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_adc_50040100_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_adc_50040100_SUPPORTS_ORDS /* nothing */
@@ -2578,7 +2501,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pa11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pa11_ORD 27
+#define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pa11_ORD 26
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pa11_REQUIRES_ORDS \
@@ -2586,7 +2509,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pa11_SUPPORTS_ORDS \
-	29, /* /soc/can@40006400 */
+	28, /* /soc/can@40006400 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pa11_EXISTS 1
@@ -2664,7 +2587,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pa12_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pa12_ORD 28
+#define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pa12_ORD 27
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pa12_REQUIRES_ORDS \
@@ -2672,7 +2595,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pa12_SUPPORTS_ORDS \
-	29, /* /soc/can@40006400 */
+	28, /* /soc/can@40006400 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pa12_EXISTS 1
@@ -2753,15 +2676,15 @@
 #define DT_N_S_soc_S_can_40006400_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_can_40006400_ORD 29
+#define DT_N_S_soc_S_can_40006400_ORD 28
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_can_40006400_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */ \
-	27, /* /soc/pin-controller@48000000/can1_rx_pa11 */ \
-	28, /* /soc/pin-controller@48000000/can1_tx_pa12 */
+	23, /* /soc/interrupt-controller@e000e100 */ \
+	26, /* /soc/pin-controller@48000000/can1_rx_pa11 */ \
+	27, /* /soc/pin-controller@48000000/can1_tx_pa12 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_can_40006400_SUPPORTS_ORDS /* nothing */
@@ -3002,7 +2925,7 @@
 #define DT_N_S_soc_S_dac_40007400_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_dac_40007400_ORD 30
+#define DT_N_S_soc_S_dac_40007400_ORD 29
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_dac_40007400_REQUIRES_ORDS \
@@ -3125,13 +3048,13 @@
 #define DT_N_S_soc_S_dma_40020400_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_dma_40020400_ORD 31
+#define DT_N_S_soc_S_dma_40020400_ORD 30
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_dma_40020400_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_dma_40020400_SUPPORTS_ORDS /* nothing */
@@ -3350,7 +3273,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pb8_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pb8_ORD 32
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pb8_ORD 31
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pb8_REQUIRES_ORDS \
@@ -3358,7 +3281,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pb8_SUPPORTS_ORDS \
-	34, /* /soc/i2c@40005400 */
+	33, /* /soc/i2c@40005400 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pb8_EXISTS 1
@@ -3436,7 +3359,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pb7_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pb7_ORD 33
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pb7_ORD 32
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pb7_REQUIRES_ORDS \
@@ -3444,7 +3367,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pb7_SUPPORTS_ORDS \
-	34, /* /soc/i2c@40005400 */
+	33, /* /soc/i2c@40005400 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pb7_EXISTS 1
@@ -3525,15 +3448,15 @@
 #define DT_N_S_soc_S_i2c_40005400_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2c_40005400_ORD 34
+#define DT_N_S_soc_S_i2c_40005400_ORD 33
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2c_40005400_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */ \
-	32, /* /soc/pin-controller@48000000/i2c1_scl_pb8 */ \
-	33, /* /soc/pin-controller@48000000/i2c1_sda_pb7 */
+	23, /* /soc/interrupt-controller@e000e100 */ \
+	31, /* /soc/pin-controller@48000000/i2c1_scl_pb8 */ \
+	32, /* /soc/pin-controller@48000000/i2c1_sda_pb7 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_i2c_40005400_SUPPORTS_ORDS /* nothing */
@@ -3721,13 +3644,13 @@
 #define DT_N_S_soc_S_i2c_40005800_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2c_40005800_ORD 35
+#define DT_N_S_soc_S_i2c_40005800_ORD 34
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2c_40005800_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_i2c_40005800_SUPPORTS_ORDS /* nothing */
@@ -3896,13 +3819,13 @@
 #define DT_N_S_soc_S_i2c_40005c00_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2c_40005c00_ORD 36
+#define DT_N_S_soc_S_i2c_40005c00_ORD 35
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2c_40005c00_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_i2c_40005c00_SUPPORTS_ORDS /* nothing */
@@ -4071,13 +3994,13 @@
 #define DT_N_S_soc_S_i2c_40008400_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2c_40008400_ORD 37
+#define DT_N_S_soc_S_i2c_40008400_ORD 36
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2c_40008400_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_i2c_40008400_SUPPORTS_ORDS /* nothing */
@@ -4246,7 +4169,7 @@
 #define DT_N_S_soc_S_interrupt_controller_40010400_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_interrupt_controller_40010400_ORD 38
+#define DT_N_S_soc_S_interrupt_controller_40010400_ORD 37
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_interrupt_controller_40010400_REQUIRES_ORDS \
@@ -4321,13 +4244,13 @@
 #define DT_N_S_soc_S_quadspi_a0001000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_quadspi_a0001000_ORD 39
+#define DT_N_S_soc_S_quadspi_a0001000_ORD 38
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_quadspi_a0001000_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_quadspi_a0001000_SUPPORTS_ORDS /* nothing */
@@ -4465,13 +4388,13 @@
 #define DT_N_S_soc_S_rng_50060800_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_rng_50060800_ORD 40
+#define DT_N_S_soc_S_rng_50060800_ORD 39
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_rng_50060800_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_rng_50060800_SUPPORTS_ORDS /* nothing */
@@ -4601,13 +4524,13 @@
 #define DT_N_S_soc_S_rtc_40002800_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_rtc_40002800_ORD 41
+#define DT_N_S_soc_S_rtc_40002800_ORD 40
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_rtc_40002800_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_rtc_40002800_SUPPORTS_ORDS /* nothing */
@@ -4732,7 +4655,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rx_pa3_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rx_pa3_ORD 42
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rx_pa3_ORD 41
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rx_pa3_REQUIRES_ORDS \
@@ -4740,7 +4663,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rx_pa3_SUPPORTS_ORDS \
-	44, /* /soc/serial@40004400 */
+	43, /* /soc/serial@40004400 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rx_pa3_EXISTS 1
@@ -4818,7 +4741,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_tx_pa2_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart2_tx_pa2_ORD 43
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart2_tx_pa2_ORD 42
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_tx_pa2_REQUIRES_ORDS \
@@ -4826,7 +4749,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_tx_pa2_SUPPORTS_ORDS \
-	44, /* /soc/serial@40004400 */
+	43, /* /soc/serial@40004400 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_tx_pa2_EXISTS 1
@@ -4907,15 +4830,15 @@
 #define DT_N_S_soc_S_serial_40004400_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_serial_40004400_ORD 44
+#define DT_N_S_soc_S_serial_40004400_ORD 43
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_serial_40004400_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */ \
-	42, /* /soc/pin-controller@48000000/usart2_rx_pa3 */ \
-	43, /* /soc/pin-controller@48000000/usart2_tx_pa2 */
+	23, /* /soc/interrupt-controller@e000e100 */ \
+	41, /* /soc/pin-controller@48000000/usart2_rx_pa3 */ \
+	42, /* /soc/pin-controller@48000000/usart2_tx_pa2 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_serial_40004400_SUPPORTS_ORDS /* nothing */
@@ -5081,13 +5004,13 @@
 #define DT_N_S_soc_S_serial_40004800_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_serial_40004800_ORD 45
+#define DT_N_S_soc_S_serial_40004800_ORD 44
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_serial_40004800_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_serial_40004800_SUPPORTS_ORDS /* nothing */
@@ -5233,13 +5156,13 @@
 #define DT_N_S_soc_S_serial_40004c00_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_serial_40004c00_ORD 46
+#define DT_N_S_soc_S_serial_40004c00_ORD 45
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_serial_40004c00_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_serial_40004c00_SUPPORTS_ORDS /* nothing */
@@ -5379,13 +5302,13 @@
 #define DT_N_S_soc_S_serial_40008000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_serial_40008000_ORD 47
+#define DT_N_S_soc_S_serial_40008000_ORD 46
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_serial_40008000_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_serial_40008000_SUPPORTS_ORDS /* nothing */
@@ -5533,17 +5456,17 @@
 #define DT_N_S_soc_S_dma_40020000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_dma_40020000_ORD 48
+#define DT_N_S_soc_S_dma_40020000_ORD 47
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_dma_40020000_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_dma_40020000_SUPPORTS_ORDS \
-	51, /* /soc/serial@40013800 */
+	50, /* /soc/serial@40013800 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_dma_40020000_EXISTS 1
@@ -5751,7 +5674,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rx_pa10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rx_pa10_ORD 49
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rx_pa10_ORD 48
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rx_pa10_REQUIRES_ORDS \
@@ -5759,7 +5682,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rx_pa10_SUPPORTS_ORDS \
-	51, /* /soc/serial@40013800 */
+	50, /* /soc/serial@40013800 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rx_pa10_EXISTS 1
@@ -5837,7 +5760,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_tx_pa9_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_tx_pa9_ORD 50
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_tx_pa9_ORD 49
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_tx_pa9_REQUIRES_ORDS \
@@ -5845,7 +5768,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_tx_pa9_SUPPORTS_ORDS \
-	51, /* /soc/serial@40013800 */
+	50, /* /soc/serial@40013800 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_tx_pa9_EXISTS 1
@@ -5926,16 +5849,16 @@
 #define DT_N_S_soc_S_serial_40013800_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_serial_40013800_ORD 51
+#define DT_N_S_soc_S_serial_40013800_ORD 50
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_serial_40013800_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */ \
-	48, /* /soc/dma@40020000 */ \
-	49, /* /soc/pin-controller@48000000/usart1_rx_pa10 */ \
-	50, /* /soc/pin-controller@48000000/usart1_tx_pa9 */
+	23, /* /soc/interrupt-controller@e000e100 */ \
+	47, /* /soc/dma@40020000 */ \
+	48, /* /soc/pin-controller@48000000/usart1_rx_pa10 */ \
+	49, /* /soc/pin-controller@48000000/usart1_tx_pa9 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_serial_40013800_SUPPORTS_ORDS /* nothing */
@@ -6167,13 +6090,13 @@
 #define DT_N_S_soc_S_spi_40003800_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_40003800_ORD 52
+#define DT_N_S_soc_S_spi_40003800_ORD 51
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_40003800_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_spi_40003800_SUPPORTS_ORDS /* nothing */
@@ -6313,13 +6236,13 @@
 #define DT_N_S_soc_S_spi_40003c00_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_40003c00_ORD 53
+#define DT_N_S_soc_S_spi_40003c00_ORD 52
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_40003c00_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_spi_40003c00_SUPPORTS_ORDS /* nothing */
@@ -6453,7 +6376,7 @@
 #define DT_N_S_soc_S_timer_e000e010_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timer_e000e010_ORD 54
+#define DT_N_S_soc_S_timer_e000e010_ORD 53
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timer_e000e010_REQUIRES_ORDS \
@@ -6526,13 +6449,13 @@
 #define DT_N_S_soc_S_timers_40001000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timers_40001000_ORD 55
+#define DT_N_S_soc_S_timers_40001000_ORD 54
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timers_40001000_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_timers_40001000_SUPPORTS_ORDS /* nothing */
@@ -6685,13 +6608,13 @@
 #define DT_N_S_soc_S_timers_40007c00_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timers_40007c00_ORD 56
+#define DT_N_S_soc_S_timers_40007c00_ORD 55
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timers_40007c00_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_timers_40007c00_SUPPORTS_ORDS /* nothing */
@@ -6840,7 +6763,7 @@
 #define DT_N_S_usbphy_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_usbphy_ORD 57
+#define DT_N_S_usbphy_ORD 56
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_usbphy_REQUIRES_ORDS \
@@ -6848,7 +6771,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_usbphy_SUPPORTS_ORDS \
-	58, /* /soc/usb@40006800 */
+	57, /* /soc/usb@40006800 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_usbphy_EXISTS 1
@@ -6927,14 +6850,14 @@
 #define DT_N_S_soc_S_usb_40006800_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_usb_40006800_ORD 58
+#define DT_N_S_soc_S_usb_40006800_ORD 57
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_usb_40006800_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */ \
-	57, /* /usbphy */
+	23, /* /soc/interrupt-controller@e000e100 */ \
+	56, /* /usbphy */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_usb_40006800_SUPPORTS_ORDS /* nothing */
@@ -7114,13 +7037,13 @@
 #define DT_N_S_soc_S_watchdog_40002c00_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_watchdog_40002c00_ORD 59
+#define DT_N_S_soc_S_watchdog_40002c00_ORD 58
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_watchdog_40002c00_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_watchdog_40002c00_SUPPORTS_ORDS /* nothing */
@@ -7252,7 +7175,7 @@
 #define DT_N_S_soc_S_watchdog_40003000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_watchdog_40003000_ORD 60
+#define DT_N_S_soc_S_watchdog_40003000_ORD 59
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_watchdog_40003000_REQUIRES_ORDS \
@@ -7362,17 +7285,17 @@
 #define DT_N_S_soc_S_flash_controller_40022000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_40022000_ORD 61
+#define DT_N_S_soc_S_flash_controller_40022000_ORD 60
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_40022000_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_40022000_SUPPORTS_ORDS \
-	62, /* /soc/flash-controller@40022000/flash@8000000 */
+	61, /* /soc/flash-controller@40022000/flash@8000000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_flash_controller_40022000_EXISTS 1
@@ -7496,15 +7419,15 @@
 #define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_ORD 62
+#define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_ORD 61
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_REQUIRES_ORDS \
-	61, /* /soc/flash-controller@40022000 */
+	60, /* /soc/flash-controller@40022000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_SUPPORTS_ORDS \
-	63, /* /soc/flash-controller@40022000/flash@8000000/partitions */
+	62, /* /soc/flash-controller@40022000/flash@8000000/partitions */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_EXISTS 1
@@ -7610,15 +7533,15 @@
 #define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions_S_partition_7c000, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions_ORD 63
+#define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions_ORD 62
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions_REQUIRES_ORDS \
-	62, /* /soc/flash-controller@40022000/flash@8000000 */
+	61, /* /soc/flash-controller@40022000/flash@8000000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions_SUPPORTS_ORDS \
-	64, /* /soc/flash-controller@40022000/flash@8000000/partitions/partition@7c000 */
+	63, /* /soc/flash-controller@40022000/flash@8000000/partitions/partition@7c000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions_EXISTS 1
@@ -7660,11 +7583,11 @@
 #define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions_S_partition_7c000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions_S_partition_7c000_ORD 64
+#define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions_S_partition_7c000_ORD 63
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions_S_partition_7c000_REQUIRES_ORDS \
-	63, /* /soc/flash-controller@40022000/flash@8000000/partitions */
+	62, /* /soc/flash-controller@40022000/flash@8000000/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_40022000_S_flash_8000000_S_partitions_S_partition_7c000_SUPPORTS_ORDS /* nothing */
@@ -7744,7 +7667,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in10_pa5_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in10_pa5_ORD 65
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in10_pa5_ORD 64
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in10_pa5_REQUIRES_ORDS \
@@ -7829,7 +7752,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in11_pa6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in11_pa6_ORD 66
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in11_pa6_ORD 65
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in11_pa6_REQUIRES_ORDS \
@@ -7914,7 +7837,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in12_pa7_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in12_pa7_ORD 67
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in12_pa7_ORD 66
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in12_pa7_REQUIRES_ORDS \
@@ -7999,7 +7922,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in13_pc4_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in13_pc4_ORD 68
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in13_pc4_ORD 67
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in13_pc4_REQUIRES_ORDS \
@@ -8084,7 +8007,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in14_pc5_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in14_pc5_ORD 69
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in14_pc5_ORD 68
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in14_pc5_REQUIRES_ORDS \
@@ -8169,7 +8092,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in15_pb0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in15_pb0_ORD 70
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in15_pb0_ORD 69
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in15_pb0_REQUIRES_ORDS \
@@ -8254,7 +8177,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in16_pb1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in16_pb1_ORD 71
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in16_pb1_ORD 70
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in16_pb1_REQUIRES_ORDS \
@@ -8339,7 +8262,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in1_pc0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in1_pc0_ORD 72
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in1_pc0_ORD 71
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in1_pc0_REQUIRES_ORDS \
@@ -8424,7 +8347,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in2_pc1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in2_pc1_ORD 73
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in2_pc1_ORD 72
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in2_pc1_REQUIRES_ORDS \
@@ -8509,7 +8432,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in3_pc2_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in3_pc2_ORD 74
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in3_pc2_ORD 73
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in3_pc2_REQUIRES_ORDS \
@@ -8594,7 +8517,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in4_pc3_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in4_pc3_ORD 75
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in4_pc3_ORD 74
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in4_pc3_REQUIRES_ORDS \
@@ -8679,7 +8602,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in5_pa0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in5_pa0_ORD 76
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in5_pa0_ORD 75
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in5_pa0_REQUIRES_ORDS \
@@ -8764,7 +8687,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in6_pa1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in6_pa1_ORD 77
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in6_pa1_ORD 76
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in6_pa1_REQUIRES_ORDS \
@@ -8849,7 +8772,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in7_pa2_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in7_pa2_ORD 78
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in7_pa2_ORD 77
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in7_pa2_REQUIRES_ORDS \
@@ -8934,7 +8857,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in8_pa3_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in8_pa3_ORD 79
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in8_pa3_ORD 78
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in8_pa3_REQUIRES_ORDS \
@@ -9019,7 +8942,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in9_pa4_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in9_pa4_ORD 80
+#define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in9_pa4_ORD 79
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_adc1_in9_pa4_REQUIRES_ORDS \
@@ -9104,7 +9027,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pb12_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pb12_ORD 81
+#define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pb12_ORD 80
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pb12_REQUIRES_ORDS \
@@ -9189,7 +9112,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pb5_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pb5_ORD 82
+#define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pb5_ORD 81
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pb5_REQUIRES_ORDS \
@@ -9274,7 +9197,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pb8_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pb8_ORD 83
+#define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pb8_ORD 82
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_rx_pb8_REQUIRES_ORDS \
@@ -9359,7 +9282,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pb13_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pb13_ORD 84
+#define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pb13_ORD 83
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pb13_REQUIRES_ORDS \
@@ -9444,7 +9367,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pb6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pb6_ORD 85
+#define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pb6_ORD 84
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pb6_REQUIRES_ORDS \
@@ -9529,7 +9452,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pb9_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pb9_ORD 86
+#define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pb9_ORD 85
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_can1_tx_pb9_REQUIRES_ORDS \
@@ -9614,7 +9537,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_dac1_out1_pa4_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_dac1_out1_pa4_ORD 87
+#define DT_N_S_soc_S_pin_controller_48000000_S_dac1_out1_pa4_ORD 86
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_dac1_out1_pa4_REQUIRES_ORDS \
@@ -9702,7 +9625,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000c00_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000c00_ORD 88
+#define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000c00_ORD 87
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000c00_REQUIRES_ORDS \
@@ -9806,7 +9729,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48001000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48001000_ORD 89
+#define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48001000_ORD 88
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48001000_REQUIRES_ORDS \
@@ -9910,7 +9833,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48001c00_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48001c00_ORD 90
+#define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48001c00_ORD 89
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48001c00_REQUIRES_ORDS \
@@ -10011,7 +9934,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pa9_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pa9_ORD 91
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pa9_ORD 90
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pa9_REQUIRES_ORDS \
@@ -10096,7 +10019,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pb6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pb6_ORD 92
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pb6_ORD 91
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_scl_pb6_REQUIRES_ORDS \
@@ -10181,7 +10104,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pa10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pa10_ORD 93
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pa10_ORD 92
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pa10_REQUIRES_ORDS \
@@ -10266,7 +10189,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pb9_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pb9_ORD 94
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pb9_ORD 93
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c1_sda_pb9_REQUIRES_ORDS \
@@ -10351,7 +10274,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_scl_pb10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_scl_pb10_ORD 95
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_scl_pb10_ORD 94
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_scl_pb10_REQUIRES_ORDS \
@@ -10436,7 +10359,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_scl_pb13_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_scl_pb13_ORD 96
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_scl_pb13_ORD 95
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_scl_pb13_REQUIRES_ORDS \
@@ -10521,7 +10444,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_sda_pb11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_sda_pb11_ORD 97
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_sda_pb11_ORD 96
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_sda_pb11_REQUIRES_ORDS \
@@ -10606,7 +10529,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_sda_pb14_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_sda_pb14_ORD 98
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_sda_pb14_ORD 97
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c2_sda_pb14_REQUIRES_ORDS \
@@ -10691,7 +10614,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_scl_pa7_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_scl_pa7_ORD 99
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_scl_pa7_ORD 98
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_scl_pa7_REQUIRES_ORDS \
@@ -10776,7 +10699,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_scl_pc0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_scl_pc0_ORD 100
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_scl_pc0_ORD 99
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_scl_pc0_REQUIRES_ORDS \
@@ -10861,7 +10784,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_sda_pb4_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_sda_pb4_ORD 101
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_sda_pb4_ORD 100
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_sda_pb4_REQUIRES_ORDS \
@@ -10946,7 +10869,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_sda_pc1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_sda_pc1_ORD 102
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_sda_pc1_ORD 101
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c3_sda_pc1_REQUIRES_ORDS \
@@ -11031,7 +10954,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_scl_pb10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_scl_pb10_ORD 103
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_scl_pb10_ORD 102
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_scl_pb10_REQUIRES_ORDS \
@@ -11116,7 +11039,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_scl_pb6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_scl_pb6_ORD 104
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_scl_pb6_ORD 103
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_scl_pb6_REQUIRES_ORDS \
@@ -11201,7 +11124,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_scl_pc0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_scl_pc0_ORD 105
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_scl_pc0_ORD 104
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_scl_pc0_REQUIRES_ORDS \
@@ -11286,7 +11209,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_sda_pb11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_sda_pb11_ORD 106
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_sda_pb11_ORD 105
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_sda_pb11_REQUIRES_ORDS \
@@ -11371,7 +11294,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_sda_pb7_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_sda_pb7_ORD 107
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_sda_pb7_ORD 106
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_sda_pb7_REQUIRES_ORDS \
@@ -11456,7 +11379,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_sda_pc1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_sda_pc1_ORD 108
+#define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_sda_pc1_ORD 107
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_i2c4_sda_pc1_REQUIRES_ORDS \
@@ -11541,7 +11464,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_cts_pa6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_cts_pa6_ORD 109
+#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_cts_pa6_ORD 108
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_cts_pa6_REQUIRES_ORDS \
@@ -11626,7 +11549,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_cts_pb13_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_cts_pb13_ORD 110
+#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_cts_pb13_ORD 109
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_cts_pb13_REQUIRES_ORDS \
@@ -11711,7 +11634,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rts_pb1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rts_pb1_ORD 111
+#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rts_pb1_ORD 110
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rts_pb1_REQUIRES_ORDS \
@@ -11796,7 +11719,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rts_pb12_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rts_pb12_ORD 112
+#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rts_pb12_ORD 111
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rts_pb12_REQUIRES_ORDS \
@@ -11881,7 +11804,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rx_pa3_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rx_pa3_ORD 113
+#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rx_pa3_ORD 112
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rx_pa3_REQUIRES_ORDS \
@@ -11966,7 +11889,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rx_pb10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rx_pb10_ORD 114
+#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rx_pb10_ORD 113
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rx_pb10_REQUIRES_ORDS \
@@ -12051,7 +11974,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rx_pc0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rx_pc0_ORD 115
+#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rx_pc0_ORD 114
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_rx_pc0_REQUIRES_ORDS \
@@ -12136,7 +12059,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_tx_pa2_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_tx_pa2_ORD 116
+#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_tx_pa2_ORD 115
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_tx_pa2_REQUIRES_ORDS \
@@ -12221,7 +12144,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_tx_pb11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_tx_pb11_ORD 117
+#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_tx_pb11_ORD 116
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_tx_pb11_REQUIRES_ORDS \
@@ -12306,7 +12229,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_tx_pc1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_tx_pc1_ORD 118
+#define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_tx_pc1_ORD 117
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_lpuart1_tx_pc1_REQUIRES_ORDS \
@@ -12391,7 +12314,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io0_pb1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io0_pb1_ORD 119
+#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io0_pb1_ORD 118
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io0_pb1_REQUIRES_ORDS \
@@ -12488,7 +12411,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io1_pb0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io1_pb0_ORD 120
+#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io1_pb0_ORD 119
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io1_pb0_REQUIRES_ORDS \
@@ -12585,7 +12508,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io2_pa7_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io2_pa7_ORD 121
+#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io2_pa7_ORD 120
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io2_pa7_REQUIRES_ORDS \
@@ -12682,7 +12605,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io3_pa6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io3_pa6_ORD 122
+#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io3_pa6_ORD 121
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_io3_pa6_REQUIRES_ORDS \
@@ -12779,7 +12702,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_ncs_pa2_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_ncs_pa2_ORD 123
+#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_ncs_pa2_ORD 122
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_ncs_pa2_REQUIRES_ORDS \
@@ -12876,7 +12799,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_ncs_pb11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_ncs_pb11_ORD 124
+#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_ncs_pb11_ORD 123
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_bk1_ncs_pb11_REQUIRES_ORDS \
@@ -12973,7 +12896,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_clk_pa3_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_clk_pa3_ORD 125
+#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_clk_pa3_ORD 124
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_clk_pa3_REQUIRES_ORDS \
@@ -13070,7 +12993,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_clk_pb10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_clk_pb10_ORD 126
+#define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_clk_pb10_ORD 125
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_quadspi_clk_pb10_REQUIRES_ORDS \
@@ -13167,7 +13090,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_ck_pc12_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_ck_pc12_ORD 127
+#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_ck_pc12_ORD 126
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_ck_pc12_REQUIRES_ORDS \
@@ -13264,7 +13187,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_cmd_pd2_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_cmd_pd2_ORD 128
+#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_cmd_pd2_ORD 127
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_cmd_pd2_REQUIRES_ORDS \
@@ -13361,7 +13284,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d0_pc8_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d0_pc8_ORD 129
+#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d0_pc8_ORD 128
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d0_pc8_REQUIRES_ORDS \
@@ -13458,7 +13381,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d1_pc9_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d1_pc9_ORD 130
+#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d1_pc9_ORD 129
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d1_pc9_REQUIRES_ORDS \
@@ -13555,7 +13478,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d2_pc10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d2_pc10_ORD 131
+#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d2_pc10_ORD 130
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d2_pc10_REQUIRES_ORDS \
@@ -13652,7 +13575,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d3_pc11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d3_pc11_ORD 132
+#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d3_pc11_ORD 131
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d3_pc11_REQUIRES_ORDS \
@@ -13749,7 +13672,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d4_pb8_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d4_pb8_ORD 133
+#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d4_pb8_ORD 132
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d4_pb8_REQUIRES_ORDS \
@@ -13846,7 +13769,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d5_pb9_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d5_pb9_ORD 134
+#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d5_pb9_ORD 133
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d5_pb9_REQUIRES_ORDS \
@@ -13943,7 +13866,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d6_pc6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d6_pc6_ORD 135
+#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d6_pc6_ORD 134
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d6_pc6_REQUIRES_ORDS \
@@ -14040,7 +13963,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d7_pc7_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d7_pc7_ORD 136
+#define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d7_pc7_ORD 135
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_sdmmc1_d7_pc7_REQUIRES_ORDS \
@@ -14137,7 +14060,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pa11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pa11_ORD 137
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pa11_ORD 136
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pa11_REQUIRES_ORDS \
@@ -14222,7 +14145,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pb4_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pb4_ORD 138
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pb4_ORD 137
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pb4_REQUIRES_ORDS \
@@ -14307,7 +14230,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pa12_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pa12_ORD 139
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pa12_ORD 138
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pa12_REQUIRES_ORDS \
@@ -14392,7 +14315,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pb5_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pb5_ORD 140
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pb5_ORD 139
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pb5_REQUIRES_ORDS \
@@ -14477,7 +14400,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_nss_pa15_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_nss_pa15_ORD 141
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_nss_pa15_ORD 140
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_nss_pa15_REQUIRES_ORDS \
@@ -14562,7 +14485,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_nss_pa4_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_nss_pa4_ORD 142
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_nss_pa4_ORD 141
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_nss_pa4_REQUIRES_ORDS \
@@ -14647,7 +14570,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_nss_pb0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_nss_pb0_ORD 143
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_nss_pb0_ORD 142
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_nss_pb0_REQUIRES_ORDS \
@@ -14732,7 +14655,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pa1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pa1_ORD 144
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pa1_ORD 143
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pa1_REQUIRES_ORDS \
@@ -14829,7 +14752,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pb3_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pb3_ORD 145
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pb3_ORD 144
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pb3_REQUIRES_ORDS \
@@ -14926,7 +14849,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_miso_pb14_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_miso_pb14_ORD 146
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_miso_pb14_ORD 145
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_miso_pb14_REQUIRES_ORDS \
@@ -15011,7 +14934,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_miso_pc2_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_miso_pc2_ORD 147
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_miso_pc2_ORD 146
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_miso_pc2_REQUIRES_ORDS \
@@ -15096,7 +15019,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_mosi_pb15_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_mosi_pb15_ORD 148
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_mosi_pb15_ORD 147
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_mosi_pb15_REQUIRES_ORDS \
@@ -15181,7 +15104,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_mosi_pc3_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_mosi_pc3_ORD 149
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_mosi_pc3_ORD 148
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_mosi_pc3_REQUIRES_ORDS \
@@ -15266,7 +15189,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_nss_pb12_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_nss_pb12_ORD 150
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_nss_pb12_ORD 149
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_nss_pb12_REQUIRES_ORDS \
@@ -15351,7 +15274,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_nss_pb9_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_nss_pb9_ORD 151
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_nss_pb9_ORD 150
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_nss_pb9_REQUIRES_ORDS \
@@ -15436,7 +15359,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_sck_pb10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_sck_pb10_ORD 152
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_sck_pb10_ORD 151
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_sck_pb10_REQUIRES_ORDS \
@@ -15533,7 +15456,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_sck_pb13_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_sck_pb13_ORD 153
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi2_sck_pb13_ORD 152
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi2_sck_pb13_REQUIRES_ORDS \
@@ -15630,7 +15553,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_miso_pb4_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_miso_pb4_ORD 154
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_miso_pb4_ORD 153
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_miso_pb4_REQUIRES_ORDS \
@@ -15715,7 +15638,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_miso_pc11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_miso_pc11_ORD 155
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_miso_pc11_ORD 154
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_miso_pc11_REQUIRES_ORDS \
@@ -15800,7 +15723,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_mosi_pb5_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_mosi_pb5_ORD 156
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_mosi_pb5_ORD 155
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_mosi_pb5_REQUIRES_ORDS \
@@ -15885,7 +15808,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_mosi_pc12_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_mosi_pc12_ORD 157
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_mosi_pc12_ORD 156
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_mosi_pc12_REQUIRES_ORDS \
@@ -15970,7 +15893,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_nss_pa15_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_nss_pa15_ORD 158
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_nss_pa15_ORD 157
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_nss_pa15_REQUIRES_ORDS \
@@ -16055,7 +15978,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_nss_pa4_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_nss_pa4_ORD 159
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_nss_pa4_ORD 158
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_nss_pa4_REQUIRES_ORDS \
@@ -16140,7 +16063,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_sck_pb3_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_sck_pb3_ORD 160
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_sck_pb3_ORD 159
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_sck_pb3_REQUIRES_ORDS \
@@ -16237,7 +16160,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_sck_pc10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_sck_pc10_ORD 161
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi3_sck_pc10_ORD 160
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi3_sck_pc10_REQUIRES_ORDS \
@@ -16334,7 +16257,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1_pa2_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1_pa2_ORD 162
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1_pa2_ORD 161
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1_pa2_REQUIRES_ORDS \
@@ -16419,7 +16342,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1_pb14_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1_pb14_ORD 163
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1_pb14_ORD 162
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1_pb14_REQUIRES_ORDS \
@@ -16504,7 +16427,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1n_pa1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1n_pa1_ORD 164
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1n_pa1_ORD 163
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1n_pa1_REQUIRES_ORDS \
@@ -16589,7 +16512,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1n_pb13_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1n_pb13_ORD 165
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1n_pb13_ORD 164
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch1n_pb13_REQUIRES_ORDS \
@@ -16674,7 +16597,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch2_pa3_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch2_pa3_ORD 166
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch2_pa3_ORD 165
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch2_pa3_REQUIRES_ORDS \
@@ -16759,7 +16682,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch2_pb15_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch2_pb15_ORD 167
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch2_pb15_ORD 166
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim15_ch2_pb15_REQUIRES_ORDS \
@@ -16844,7 +16767,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim16_ch1_pa6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim16_ch1_pa6_ORD 168
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim16_ch1_pa6_ORD 167
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim16_ch1_pa6_REQUIRES_ORDS \
@@ -16929,7 +16852,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim16_ch1_pb8_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim16_ch1_pb8_ORD 169
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim16_ch1_pb8_ORD 168
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim16_ch1_pb8_REQUIRES_ORDS \
@@ -17014,7 +16937,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim16_ch1n_pb6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim16_ch1n_pb6_ORD 170
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim16_ch1n_pb6_ORD 169
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim16_ch1n_pb6_REQUIRES_ORDS \
@@ -17099,7 +17022,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch1_pa8_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch1_pa8_ORD 171
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch1_pa8_ORD 170
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch1_pa8_REQUIRES_ORDS \
@@ -17184,7 +17107,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch1n_pa7_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch1n_pa7_ORD 172
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch1n_pa7_ORD 171
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch1n_pa7_REQUIRES_ORDS \
@@ -17269,7 +17192,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch1n_pb13_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch1n_pb13_ORD 173
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch1n_pb13_ORD 172
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch1n_pb13_REQUIRES_ORDS \
@@ -17354,7 +17277,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch2_pa9_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch2_pa9_ORD 174
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch2_pa9_ORD 173
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch2_pa9_REQUIRES_ORDS \
@@ -17439,7 +17362,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch2n_pb0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch2n_pb0_ORD 175
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch2n_pb0_ORD 174
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch2n_pb0_REQUIRES_ORDS \
@@ -17524,7 +17447,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch2n_pb14_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch2n_pb14_ORD 176
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch2n_pb14_ORD 175
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch2n_pb14_REQUIRES_ORDS \
@@ -17609,7 +17532,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch3_pa10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch3_pa10_ORD 177
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch3_pa10_ORD 176
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch3_pa10_REQUIRES_ORDS \
@@ -17694,7 +17617,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch3n_pb1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch3n_pb1_ORD 178
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch3n_pb1_ORD 177
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch3n_pb1_REQUIRES_ORDS \
@@ -17779,7 +17702,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch3n_pb15_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch3n_pb15_ORD 179
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch3n_pb15_ORD 178
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch3n_pb15_REQUIRES_ORDS \
@@ -17864,7 +17787,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch4_pa11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch4_pa11_ORD 180
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch4_pa11_ORD 179
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim1_ch4_pa11_REQUIRES_ORDS \
@@ -17949,7 +17872,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa15_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa15_ORD 181
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa15_ORD 180
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa15_REQUIRES_ORDS \
@@ -18034,7 +17957,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa5_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa5_ORD 182
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa5_ORD 181
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa5_REQUIRES_ORDS \
@@ -18119,7 +18042,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch2_pa1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch2_pa1_ORD 183
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch2_pa1_ORD 182
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch2_pa1_REQUIRES_ORDS \
@@ -18204,7 +18127,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch2_pb3_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch2_pb3_ORD 184
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch2_pb3_ORD 183
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch2_pb3_REQUIRES_ORDS \
@@ -18289,7 +18212,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch3_pa2_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch3_pa2_ORD 185
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch3_pa2_ORD 184
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch3_pa2_REQUIRES_ORDS \
@@ -18374,7 +18297,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch3_pb10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch3_pb10_ORD 186
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch3_pb10_ORD 185
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch3_pb10_REQUIRES_ORDS \
@@ -18459,7 +18382,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch4_pa3_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch4_pa3_ORD 187
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch4_pa3_ORD 186
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch4_pa3_REQUIRES_ORDS \
@@ -18544,7 +18467,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch4_pb11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch4_pb11_ORD 188
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch4_pb11_ORD 187
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch4_pb11_REQUIRES_ORDS \
@@ -18629,7 +18552,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch1_pa6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch1_pa6_ORD 189
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch1_pa6_ORD 188
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch1_pa6_REQUIRES_ORDS \
@@ -18714,7 +18637,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch1_pb4_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch1_pb4_ORD 190
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch1_pb4_ORD 189
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch1_pb4_REQUIRES_ORDS \
@@ -18799,7 +18722,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch1_pc6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch1_pc6_ORD 191
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch1_pc6_ORD 190
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch1_pc6_REQUIRES_ORDS \
@@ -18884,7 +18807,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch2_pa7_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch2_pa7_ORD 192
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch2_pa7_ORD 191
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch2_pa7_REQUIRES_ORDS \
@@ -18969,7 +18892,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch2_pb5_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch2_pb5_ORD 193
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch2_pb5_ORD 192
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch2_pb5_REQUIRES_ORDS \
@@ -19054,7 +18977,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch2_pc7_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch2_pc7_ORD 194
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch2_pc7_ORD 193
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch2_pc7_REQUIRES_ORDS \
@@ -19139,7 +19062,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch3_pb0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch3_pb0_ORD 195
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch3_pb0_ORD 194
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch3_pb0_REQUIRES_ORDS \
@@ -19224,7 +19147,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch3_pc8_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch3_pc8_ORD 196
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch3_pc8_ORD 195
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch3_pc8_REQUIRES_ORDS \
@@ -19309,7 +19232,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch4_pb1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch4_pb1_ORD 197
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch4_pb1_ORD 196
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch4_pb1_REQUIRES_ORDS \
@@ -19394,7 +19317,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch4_pc9_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch4_pc9_ORD 198
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch4_pc9_ORD 197
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim3_ch4_pc9_REQUIRES_ORDS \
@@ -19479,7 +19402,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_uart4_cts_pb7_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_uart4_cts_pb7_ORD 199
+#define DT_N_S_soc_S_pin_controller_48000000_S_uart4_cts_pb7_ORD 198
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_uart4_cts_pb7_REQUIRES_ORDS \
@@ -19564,7 +19487,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_uart4_rts_pa15_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_uart4_rts_pa15_ORD 200
+#define DT_N_S_soc_S_pin_controller_48000000_S_uart4_rts_pa15_ORD 199
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_uart4_rts_pa15_REQUIRES_ORDS \
@@ -19649,7 +19572,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_uart4_rx_pa1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_uart4_rx_pa1_ORD 201
+#define DT_N_S_soc_S_pin_controller_48000000_S_uart4_rx_pa1_ORD 200
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_uart4_rx_pa1_REQUIRES_ORDS \
@@ -19734,7 +19657,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_uart4_rx_pc11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_uart4_rx_pc11_ORD 202
+#define DT_N_S_soc_S_pin_controller_48000000_S_uart4_rx_pc11_ORD 201
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_uart4_rx_pc11_REQUIRES_ORDS \
@@ -19819,7 +19742,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_uart4_tx_pa0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_uart4_tx_pa0_ORD 203
+#define DT_N_S_soc_S_pin_controller_48000000_S_uart4_tx_pa0_ORD 202
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_uart4_tx_pa0_REQUIRES_ORDS \
@@ -19904,7 +19827,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_uart4_tx_pc10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_uart4_tx_pc10_ORD 204
+#define DT_N_S_soc_S_pin_controller_48000000_S_uart4_tx_pc10_ORD 203
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_uart4_tx_pc10_REQUIRES_ORDS \
@@ -19989,7 +19912,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_cts_pa11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_cts_pa11_ORD 205
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_cts_pa11_ORD 204
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_cts_pa11_REQUIRES_ORDS \
@@ -20074,7 +19997,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_cts_pb4_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_cts_pb4_ORD 206
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_cts_pb4_ORD 205
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_cts_pb4_REQUIRES_ORDS \
@@ -20159,7 +20082,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rts_pa12_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rts_pa12_ORD 207
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rts_pa12_ORD 206
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rts_pa12_REQUIRES_ORDS \
@@ -20244,7 +20167,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rts_pb3_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rts_pb3_ORD 208
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rts_pb3_ORD 207
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rts_pb3_REQUIRES_ORDS \
@@ -20329,7 +20252,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rx_pb7_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rx_pb7_ORD 209
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rx_pb7_ORD 208
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_rx_pb7_REQUIRES_ORDS \
@@ -20414,7 +20337,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_tx_pb6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_tx_pb6_ORD 210
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart1_tx_pb6_ORD 209
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart1_tx_pb6_REQUIRES_ORDS \
@@ -20499,7 +20422,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_cts_pa0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart2_cts_pa0_ORD 211
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart2_cts_pa0_ORD 210
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_cts_pa0_REQUIRES_ORDS \
@@ -20584,7 +20507,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rts_pa1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rts_pa1_ORD 212
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rts_pa1_ORD 211
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rts_pa1_REQUIRES_ORDS \
@@ -20669,7 +20592,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rx_pa15_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rx_pa15_ORD 213
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rx_pa15_ORD 212
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart2_rx_pa15_REQUIRES_ORDS \
@@ -20754,7 +20677,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_cts_pa6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_cts_pa6_ORD 214
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_cts_pa6_ORD 213
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_cts_pa6_REQUIRES_ORDS \
@@ -20839,7 +20762,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_cts_pb13_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_cts_pb13_ORD 215
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_cts_pb13_ORD 214
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_cts_pb13_REQUIRES_ORDS \
@@ -20924,7 +20847,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pa15_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pa15_ORD 216
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pa15_ORD 215
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pa15_REQUIRES_ORDS \
@@ -21009,7 +20932,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pb1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pb1_ORD 217
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pb1_ORD 216
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pb1_REQUIRES_ORDS \
@@ -21094,7 +21017,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pb14_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pb14_ORD 218
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pb14_ORD 217
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pb14_REQUIRES_ORDS \
@@ -21179,7 +21102,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pd2_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pd2_ORD 219
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pd2_ORD 218
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rts_pd2_REQUIRES_ORDS \
@@ -21264,7 +21187,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rx_pb11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rx_pb11_ORD 220
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rx_pb11_ORD 219
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rx_pb11_REQUIRES_ORDS \
@@ -21349,7 +21272,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rx_pc11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rx_pc11_ORD 221
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rx_pc11_ORD 220
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rx_pc11_REQUIRES_ORDS \
@@ -21434,7 +21357,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rx_pc5_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rx_pc5_ORD 222
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rx_pc5_ORD 221
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_rx_pc5_REQUIRES_ORDS \
@@ -21519,7 +21442,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_tx_pb10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_tx_pb10_ORD 223
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_tx_pb10_ORD 222
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_tx_pb10_REQUIRES_ORDS \
@@ -21604,7 +21527,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_tx_pc10_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_tx_pc10_ORD 224
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_tx_pc10_ORD 223
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_tx_pc10_REQUIRES_ORDS \
@@ -21689,7 +21612,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_tx_pc4_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_tx_pc4_ORD 225
+#define DT_N_S_soc_S_pin_controller_48000000_S_usart3_tx_pc4_ORD 224
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usart3_tx_pc4_REQUIRES_ORDS \
@@ -21774,7 +21697,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usb_dm_pa11_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usb_dm_pa11_ORD 226
+#define DT_N_S_soc_S_pin_controller_48000000_S_usb_dm_pa11_ORD 225
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usb_dm_pa11_REQUIRES_ORDS \
@@ -21859,7 +21782,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usb_dp_pa12_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usb_dp_pa12_ORD 227
+#define DT_N_S_soc_S_pin_controller_48000000_S_usb_dp_pa12_ORD 226
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usb_dp_pa12_REQUIRES_ORDS \
@@ -21944,7 +21867,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usb_noe_pa13_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usb_noe_pa13_ORD 228
+#define DT_N_S_soc_S_pin_controller_48000000_S_usb_noe_pa13_ORD 227
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usb_noe_pa13_REQUIRES_ORDS \
@@ -22029,7 +21952,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_usb_noe_pc9_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_usb_noe_pc9_ORD 229
+#define DT_N_S_soc_S_pin_controller_48000000_S_usb_noe_pc9_ORD 228
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_usb_noe_pc9_REQUIRES_ORDS \
@@ -22117,7 +22040,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000400_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000400_ORD 230
+#define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000400_ORD 229
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000400_REQUIRES_ORDS \
@@ -22126,8 +22049,8 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000400_SUPPORTS_ORDS \
-	234, /* /soc/spi@40013000 */ \
-	235, /* /soc/spi@40013000/sx1278@0 */
+	233, /* /soc/spi@40013000 */ \
+	234, /* /soc/spi@40013000/sx1278@0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_gpio_48000400_EXISTS 1
@@ -22220,7 +22143,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pa6_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pa6_ORD 231
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pa6_ORD 230
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pa6_REQUIRES_ORDS \
@@ -22228,7 +22151,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pa6_SUPPORTS_ORDS \
-	234, /* /soc/spi@40013000 */
+	233, /* /soc/spi@40013000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_miso_pa6_EXISTS 1
@@ -22306,7 +22229,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pa7_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pa7_ORD 232
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pa7_ORD 231
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pa7_REQUIRES_ORDS \
@@ -22314,7 +22237,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pa7_SUPPORTS_ORDS \
-	234, /* /soc/spi@40013000 */
+	233, /* /soc/spi@40013000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_mosi_pa7_EXISTS 1
@@ -22392,7 +22315,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pa5_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pa5_ORD 233
+#define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pa5_ORD 232
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pa5_REQUIRES_ORDS \
@@ -22400,7 +22323,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pa5_SUPPORTS_ORDS \
-	234, /* /soc/spi@40013000 */
+	233, /* /soc/spi@40013000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_spi1_sck_pa5_EXISTS 1
@@ -22493,21 +22416,21 @@
 #define DT_N_S_soc_S_spi_40013000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_spi_40013000_S_sx1278_0, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_40013000_ORD 234
+#define DT_N_S_soc_S_spi_40013000_ORD 233
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_40013000_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */ \
-	230, /* /soc/pin-controller@48000000/gpio@48000400 */ \
-	231, /* /soc/pin-controller@48000000/spi1_miso_pa6 */ \
-	232, /* /soc/pin-controller@48000000/spi1_mosi_pa7 */ \
-	233, /* /soc/pin-controller@48000000/spi1_sck_pa5 */
+	23, /* /soc/interrupt-controller@e000e100 */ \
+	229, /* /soc/pin-controller@48000000/gpio@48000400 */ \
+	230, /* /soc/pin-controller@48000000/spi1_miso_pa6 */ \
+	231, /* /soc/pin-controller@48000000/spi1_mosi_pa7 */ \
+	232, /* /soc/pin-controller@48000000/spi1_sck_pa5 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_spi_40013000_SUPPORTS_ORDS \
-	235, /* /soc/spi@40013000/sx1278@0 */
+	234, /* /soc/spi@40013000/sx1278@0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_spi_40013000_EXISTS 1
@@ -22679,13 +22602,13 @@
 #define DT_N_S_soc_S_spi_40013000_S_sx1278_0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_40013000_S_sx1278_0_ORD 235
+#define DT_N_S_soc_S_spi_40013000_S_sx1278_0_ORD 234
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_40013000_S_sx1278_0_REQUIRES_ORDS \
 	18, /* /soc/pin-controller@48000000/gpio@48000800 */ \
-	230, /* /soc/pin-controller@48000000/gpio@48000400 */ \
-	234, /* /soc/spi@40013000 */
+	229, /* /soc/pin-controller@48000000/gpio@48000400 */ \
+	233, /* /soc/spi@40013000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_spi_40013000_S_sx1278_0_SUPPORTS_ORDS /* nothing */
@@ -22846,17 +22769,17 @@
 #define DT_N_S_soc_S_timers_40000000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_timers_40000000_S_pwm, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timers_40000000_ORD 236
+#define DT_N_S_soc_S_timers_40000000_ORD 235
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timers_40000000_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_timers_40000000_SUPPORTS_ORDS \
-	238, /* /soc/timers@40000000/pwm */
+	237, /* /soc/timers@40000000/pwm */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_timers_40000000_EXISTS 1
@@ -22995,7 +22918,7 @@
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa0_ORD 237
+#define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa0_ORD 236
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa0_REQUIRES_ORDS \
@@ -23003,7 +22926,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa0_SUPPORTS_ORDS \
-	238, /* /soc/timers@40000000/pwm */
+	237, /* /soc/timers@40000000/pwm */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_pin_controller_48000000_S_tim2_ch1_pa0_EXISTS 1
@@ -23084,12 +23007,12 @@
 #define DT_N_S_soc_S_timers_40000000_S_pwm_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timers_40000000_S_pwm_ORD 238
+#define DT_N_S_soc_S_timers_40000000_S_pwm_ORD 237
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timers_40000000_S_pwm_REQUIRES_ORDS \
-	236, /* /soc/timers@40000000 */ \
-	237, /* /soc/pin-controller@48000000/tim2_ch1_pa0 */
+	235, /* /soc/timers@40000000 */ \
+	236, /* /soc/pin-controller@48000000/tim2_ch1_pa0 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_timers_40000000_S_pwm_SUPPORTS_ORDS /* nothing */
@@ -23196,17 +23119,17 @@
 #define DT_N_S_soc_S_timers_40000400_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timers_40000400_ORD 239
+#define DT_N_S_soc_S_timers_40000400_ORD 238
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timers_40000400_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_timers_40000400_SUPPORTS_ORDS \
-	240, /* /soc/timers@40000400/pwm */
+	239, /* /soc/timers@40000400/pwm */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_timers_40000400_EXISTS 1
@@ -23356,11 +23279,11 @@
 #define DT_N_S_soc_S_timers_40000400_S_pwm_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timers_40000400_S_pwm_ORD 240
+#define DT_N_S_soc_S_timers_40000400_S_pwm_ORD 239
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timers_40000400_S_pwm_REQUIRES_ORDS \
-	239, /* /soc/timers@40000400 */
+	238, /* /soc/timers@40000400 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_timers_40000400_S_pwm_SUPPORTS_ORDS /* nothing */
@@ -23454,17 +23377,17 @@
 #define DT_N_S_soc_S_timers_40012c00_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timers_40012c00_ORD 241
+#define DT_N_S_soc_S_timers_40012c00_ORD 240
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timers_40012c00_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_timers_40012c00_SUPPORTS_ORDS \
-	242, /* /soc/timers@40012c00/pwm */
+	241, /* /soc/timers@40012c00/pwm */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_timers_40012c00_EXISTS 1
@@ -23680,11 +23603,11 @@
 #define DT_N_S_soc_S_timers_40012c00_S_pwm_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timers_40012c00_S_pwm_ORD 242
+#define DT_N_S_soc_S_timers_40012c00_S_pwm_ORD 241
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timers_40012c00_S_pwm_REQUIRES_ORDS \
-	241, /* /soc/timers@40012c00 */
+	240, /* /soc/timers@40012c00 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_timers_40012c00_S_pwm_SUPPORTS_ORDS /* nothing */
@@ -23778,17 +23701,17 @@
 #define DT_N_S_soc_S_timers_40014000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timers_40014000_ORD 243
+#define DT_N_S_soc_S_timers_40014000_ORD 242
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timers_40014000_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_timers_40014000_SUPPORTS_ORDS \
-	244, /* /soc/timers@40014000/pwm */
+	243, /* /soc/timers@40014000/pwm */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_timers_40014000_EXISTS 1
@@ -23940,11 +23863,11 @@
 #define DT_N_S_soc_S_timers_40014000_S_pwm_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timers_40014000_S_pwm_ORD 244
+#define DT_N_S_soc_S_timers_40014000_S_pwm_ORD 243
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timers_40014000_S_pwm_REQUIRES_ORDS \
-	243, /* /soc/timers@40014000 */
+	242, /* /soc/timers@40014000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_timers_40014000_S_pwm_SUPPORTS_ORDS /* nothing */
@@ -24040,17 +23963,17 @@
 #define DT_N_S_soc_S_timers_40014400_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timers_40014400_ORD 245
+#define DT_N_S_soc_S_timers_40014400_ORD 244
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timers_40014400_REQUIRES_ORDS \
 	13, /* /soc */ \
 	17, /* /soc/rcc@40021000 */ \
-	24, /* /soc/interrupt-controller@e000e100 */
+	23, /* /soc/interrupt-controller@e000e100 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_timers_40014400_SUPPORTS_ORDS \
-	246, /* /soc/timers@40014400/pwm */
+	245, /* /soc/timers@40014400/pwm */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_timers_40014400_EXISTS 1
@@ -24202,11 +24125,11 @@
 #define DT_N_S_soc_S_timers_40014400_S_pwm_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timers_40014400_S_pwm_ORD 246
+#define DT_N_S_soc_S_timers_40014400_S_pwm_ORD 245
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timers_40014400_S_pwm_REQUIRES_ORDS \
-	245, /* /soc/timers@40014400 */
+	244, /* /soc/timers@40014400 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_timers_40014400_S_pwm_SUPPORTS_ORDS /* nothing */

@@ -13,7 +13,6 @@
 #include <zephyr/types.h>
 #include <drivers/uart.h>
 #include <drivers/lora.h>
-#include <drivers/gpio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -35,11 +34,6 @@
 #define DEFAULT_RADIO_NODE DT_NODELABEL(lora0)
 BUILD_ASSERT(DT_NODE_HAS_STATUS(DEFAULT_RADIO_NODE, okay),
              "No default LoRa radio specified in DT");
-
-#define STATE_NODE	DT_ALIAS(state)
-#if !DT_NODE_HAS_STATUS(STATE_NODE, okay)
-#error "Unsupported board: state devicetree alias is not defined"
-#endif
 
 #define COMMAND_TYPE_STOP_RECEIVE_SESSION "STOP"
 #define COMMAND_TYPE_GET_CFG "GET_CFG"
@@ -65,7 +59,7 @@ BUILD_ASSERT(DT_NODE_HAS_STATUS(DEFAULT_RADIO_NODE, okay),
 
 #define CURRENT_UART_DEVICE "UART_1"
 
-#define RECV_TIMEOUT_SEC 30
+#define RECV_TIMEOUT_SEC 5
 
 #define STATE_IDLE 0
 #define STATE_START_PER_MEAS 1
@@ -77,6 +71,7 @@ BUILD_ASSERT(DT_NODE_HAS_STATUS(DEFAULT_RADIO_NODE, okay),
 #define STATE_INCR_FREQ 7
 #define STATE_DECR_FREQ 8
 #define STATE_SET_SF 9
+#define STATE_STOP 10
 /**
  * Define area end
  * */
@@ -87,8 +82,6 @@ extern uint8_t radio_buf_tx[RADIO_BUF_LEN];
 extern atomic_t atomic_cur_state;
 extern atomic_t atomic_per_num;
 extern atomic_t atomic_uart_tx_done;
-
-extern struct gpio_dt_spec state_bluetooth;
 
 struct parsed_frame_s {
   const char *cmd_ptr;
@@ -104,17 +97,32 @@ struct print_data_elem_s {
 /**
  * Function  area begin
  * */
-void print_modem_cfg(const struct device *dev, uint8_t *buf_tx, struct lora_modem_config *cfg);
-void incr_decr_modem_frequency(const struct device *lora_dev, struct lora_modem_config *lora_cfg, bool incr,
-  const struct device *uart_dev, uint8_t buf_tx);
+void print_modem_cfg(const struct device *dev, struct lora_modem_config *cfg);
 void print_per_status(const struct device *dev, uint8_t *buf_tx, int ret, struct print_data_elem_s *print_data);
-int change_modem_frequency(const struct device *dev, struct lora_modem_config *cfg, uint32_t new_freq_khz);
-int change_modem_datarate(const struct device *dev, struct lora_modem_config *cfg, enum lora_datarate new_dr);
+void incr_decr_modem_frequency(const struct device *lora_dev, struct lora_modem_config *lora_cfg, bool incr,
+  const struct device *uart_dev, uint8_t *buf_tx);
+void change_modem_frequency(const struct device *lora_dev, struct lora_modem_config *lora_cfg, uint32_t new_freq_khz,
+  const struct device *uart_dev, uint8_t *buf_tx);
+void change_modem_datarate(const struct device *lora_dev, struct lora_modem_config *lora_cfg, enum lora_datarate new_dr,
+  const struct device *uart_dev, uint8_t *buf_tx);
 void per_meas(const struct device *lora_dev, struct lora_modem_config *lora_cfg,
-             const struct device *uart_dev, uint8_t *buf_tx);
+  const struct device *uart_dev, uint8_t *buf_tx);
+void stop_session(const struct device *lora_dev, const struct device *uart_dev, uint8_t *buf_tx);
 
 void lora_receive_cb(const struct device *dev, uint8_t *data, uint16_t size, int16_t rssi, int8_t snr);
 void lora_rx_error_timeout_cb(void);
+
+static inline void send_to_terminal(const struct device *dev, uint8_t *buf_tx)
+{
+    /* Set atomic_uart_tx_done in false */
+    while (atomic_cas(&atomic_uart_tx_done, true, false)) {
+        k_sleep(K_MSEC(1));
+    }
+    uart_tx(dev, buf_tx, strlen(buf_tx), TX_TIMEOUT_US);
+    while (!atomic_get(&atomic_uart_tx_done)) {
+        k_sleep(K_MSEC(10));
+    }
+}
 /**
  * Function  area end
  * */

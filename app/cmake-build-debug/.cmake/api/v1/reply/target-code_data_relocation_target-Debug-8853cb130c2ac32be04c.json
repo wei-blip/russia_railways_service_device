@@ -24,7 +24,7 @@
 			{
 				"command" : 1,
 				"file" : 3,
-				"line" : 8,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
@@ -60,13 +60,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 666,
+				"line" : 76,
 				"parent" : 7
 			}
 		]
 	},
-	"id" : "zephyr_property_target::@6890427a1f51a3e7e1df",
-	"name" : "zephyr_property_target",
+	"id" : "code_data_relocation_target::@6890427a1f51a3e7e1df",
+	"name" : "code_data_relocation_target",
 	"paths" : 
 	{
 		"build" : ".",
