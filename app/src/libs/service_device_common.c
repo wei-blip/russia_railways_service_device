@@ -19,33 +19,37 @@ static inline void wait_uart(void)
 }
 
 void per_meas(const struct device *lora_dev, struct lora_modem_config *lora_cfg,
-  const struct device *uart_dev, uint8_t *buf_tx)
+  const struct device *uart_dev)
 {
     int8_t snr = 0;
-    int16_t rssi;
+    int16_t rssi = 0;
     uint32_t i = 0;
-    int32_t ret = 0;
+    volatile int32_t ret = 0;
     atomic_val_t per_num = atomic_get(&atomic_per_num);
     atomic_t atomic_packet_count = ATOMIC_INIT(0);
     struct print_data_elem_s print_data = {0};
 
-    sprintf(buf_tx, "Start PER measurement...\n");
-    send_to_terminal(uart_dev, buf_tx);
+    send_to_terminal(uart_dev, "Start PER measurement...\n");
 
     /* If receive is running then stop it */
     lora_recv_async(lora_dev, NULL, NULL);
 
     while (i < per_num) {
-        if (atomic_cas(&atomic_cur_state, STATE_PER_MEAS_RUN, STATE_PER_MEAS_RUN)) {
+        if (atomic_cas(&atomic_cur_state, STATE_PER_MEAS, STATE_PER_MEAS)) {
             atomic_inc(&atomic_packet_count);
             sys_rand_get(radio_buf_tx, RADIO_BUF_LEN);
 
             lora_cfg->tx = true;
-            lora_config(lora_dev, lora_cfg);
-            k_sleep(K_MSEC(500));
-            lora_send(lora_dev, radio_buf_tx, RADIO_BUF_LEN);
+            do {
+                ret = lora_config(lora_dev, lora_cfg);
+            } while (ret);
+
+            ret = lora_send(lora_dev, radio_buf_tx, RADIO_BUF_LEN);
+
             lora_cfg->tx = false;
-            lora_config(lora_dev, lora_cfg);
+            do {
+                ret = lora_config(lora_dev, lora_cfg);
+            } while (ret);
 
             ret = lora_recv(lora_dev, radio_buf_rx, RADIO_BUF_LEN,
                             K_SECONDS(RECV_TIMEOUT_SEC), &rssi, &snr);
@@ -54,8 +58,9 @@ void per_meas(const struct device *lora_dev, struct lora_modem_config *lora_cfg,
             print_data.rssi = rssi;
             print_data.snr = snr;
 
-            print_per_status(uart_dev, buf_tx, ret, &print_data);
+            print_per_status(uart_dev, ret, &print_data);
             i++;
+            k_sleep(K_MSEC(300));
         } else {
             break;
         }
@@ -69,13 +74,13 @@ void lora_receive_cb(const struct device *dev, uint8_t *data, uint16_t size, int
     atomic_set(&atomic_cur_state, STATE_TRANSMIT);
 }
 
-void lora_rx_error_timeout_cb(void)
+void lora_rx_error_timeout_cb(const struct device *dev)
 {
 
 }
 
 void change_modem_datarate(const struct device *lora_dev, struct lora_modem_config *lora_cfg, enum lora_datarate new_dr,
-  const struct device *uart_dev, uint8_t *buf_tx)
+  const struct device *uart_dev)
 {
     lora_recv_async(lora_dev, NULL, NULL);
     lora_cfg->datarate = new_dr;
@@ -86,9 +91,8 @@ void change_modem_datarate(const struct device *lora_dev, struct lora_modem_conf
     }
 }
 
-
 void change_modem_frequency(const struct device *lora_dev, struct lora_modem_config *lora_cfg, uint32_t new_freq_khz,
-  const struct device *uart_dev, uint8_t *buf_tx)
+  const struct device *uart_dev)
 {
     lora_recv_async(lora_dev, NULL, NULL);
     lora_cfg->frequency = (new_freq_khz*1000);
@@ -99,9 +103,8 @@ void change_modem_frequency(const struct device *lora_dev, struct lora_modem_con
     }
 }
 
-
 void incr_decr_modem_frequency(const struct device *lora_dev, struct lora_modem_config *lora_cfg, bool incr,
-  const struct device *uart_dev, uint8_t *buf_tx)
+  const struct device *uart_dev)
 {
     lora_recv_async(lora_dev, NULL, NULL);
     if (incr) {
@@ -201,21 +204,21 @@ void print_modem_cfg(const struct device *dev, struct lora_modem_config *cfg)
 }
 
 
-void print_per_status(const struct device *uart_dev, uint8_t *buf_tx, int ret, struct print_data_elem_s *print_data)
+void print_per_status(const struct device *uart_dev, int ret, struct print_data_elem_s *print_data)
 {
     static uint8_t per_buf[UART_TX_BUF_LEN] = {0};
-    if (ret) {
-        sprintf(per_buf, "Packet %lu/%lu is missing!!!\n", print_data->packet_num, atomic_per_num);
+    if ((ret < 0) || ret != RADIO_BUF_LEN) {
+        sprintf(per_buf, "Packet %lu/%ld is missing!!!\n", print_data->packet_num, atomic_per_num);
         send_to_terminal(uart_dev, per_buf);
     } else {
-        sprintf(per_buf, "Packet %lu/%lu is received\n rssi: %d\n snr: %d\n", print_data->packet_num,
+        sprintf(per_buf, "Packet %lu/%ld is received\n rssi: %d\n snr: %d\n", print_data->packet_num,
                 atomic_per_num, print_data->rssi, print_data->snr);
         send_to_terminal(uart_dev, per_buf);
     }
 }
 
 
-void stop_session(const struct device *lora_dev, const struct device *uart_dev, uint8_t *buf_tx) {
+void stop_session(const struct device *lora_dev, const struct device *uart_dev) {
     lora_recv_async(lora_dev, NULL, NULL);
     send_to_terminal(uart_dev, "Session stopped, modem released.\n");
 }

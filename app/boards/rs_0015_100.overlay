@@ -1,0 +1,71 @@
+/*
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Copyright (c) 2021 Planet Innovation
+ */
+
+&spi2 {
+    status = "disabled";
+};
+
+&spi1 {
+    pinctrl-0 = <&spi1_sck_pb3 &spi1_miso_pb4 &spi1_mosi_pb5>;
+    pinctrl-names = "default";
+    status = "okay";
+    cs-gpios = <&gpioa 12 (GPIO_ACTIVE_LOW)>;
+    dmas = <&dma1 3 1 0x20440>, <&dma1 2 1 0x20480>;
+    dma-names = "tx", "rx";
+    lora0: sx1278@0 {
+        compatible = "semtech,sx1276";
+        reg = <0>;
+        label = "sx1278";
+        reset-gpios = <&gpiob 8 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>; // GPIO_ACTIVE_LOW
+        dio-gpios = <&gpiob 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpioa 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpioa 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpioc 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        power-amplifier-output = "pa-boost";
+        spi-max-frequency = <500000>;
+    };
+};
+
+
+&usart2 {
+    pinctrl-0 = <&usart2_tx_pa2 &usart2_rx_pa3>;
+    pinctrl-names = "default";
+    current-speed = <115200>;
+    parity = "none";
+    dmas = <&dma1 7 2 0x20440>,
+           <&dma1 6 2 0x20480>;
+    dma-names = "tx","rx";
+    status = "okay";
+};
+
+
+&dma1 {
+    status = "okay";
+};
+
+
+&clk_hsi {
+    status = "okay";
+};
+
+
+&pll {
+    status = "okay";
+    div-m = <1>;            /*  16 / 1  = 16MHz  */
+    mul-n = <20>;           /*  16 * 20 = 320MHz */
+    div-r = <4>;            /* 128 / 2  = 80MHz  */
+    clocks = <&clk_hsi>;
+};
+
+
+&rcc {
+	status = "okay";
+	clocks = <&pll>;
+	clock-frequency = <DT_FREQ_M(80)>;
+	ahb-prescaler = <1>;
+	apb1-prescaler = <1>;
+	apb2-prescaler = <1>;
+};

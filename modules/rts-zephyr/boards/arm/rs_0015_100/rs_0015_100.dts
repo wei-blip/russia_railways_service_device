@@ -7,8 +7,8 @@
     compatible = "rts,rs_0015_100";
 
     chosen {
-        zephyr,console = &usart2;
-        zephyr,shell-uart = &usart2;
+//        zephyr,console = &usart2;
+//        zephyr,shell-uart = &usart2;
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
     };

@@ -4,7 +4,6 @@
 #include <logging/log.h>
 LOG_MODULE_REGISTER(service_device, LOG_LEVEL_DBG);
 
-uint8_t uart_buf_tx[UART_TX_BUF_LEN] = {0};
 uint8_t uart_buf_rx[UART_RX_BUF_LEN] = {0};
 
 /**
@@ -44,7 +43,7 @@ void event_cb(const struct device* dev, struct uart_event* evt, void* user_data)
 
 void work_uart_data_proc_handler(struct k_work *item)
 {
-    static const struct device* uart_dev;
+    const struct device* uart_dev = device_get_binding(CURRENT_UART_DEVICE);
     struct parsed_frame_s parsed_frame = {0};
     /* Select current command */
     parsed_frame.cmd_ptr = strtok((char*)(&uart_buf_rx), "=");
@@ -53,13 +52,12 @@ void work_uart_data_proc_handler(struct k_work *item)
 
     if (!strcmp(parsed_frame.cmd_ptr, COMMAND_TYPE_PER)) { /* Set PER measurement */
 
-        atomic_set(&atomic_cur_state, STATE_START_PER_MEAS);
+        atomic_set(&atomic_cur_state, STATE_PER_MEAS);
         atomic_set(&atomic_per_num, (atomic_val_t)parsed_frame.arg); /* Set packet num */
 
     } else if (!strcmp(parsed_frame.cmd_ptr, COMMAND_TYPE_STOP_RECEIVE_SESSION)) { /* Stop receive */
 
         atomic_set(&atomic_cur_state, STATE_STOP);
-        uart_dev = device_get_binding(CURRENT_UART_DEVICE);
         send_to_terminal(uart_dev, "Wait while started transaction will be ended\n");
 
     } else if (!strcmp(parsed_frame.cmd_ptr, COMMAND_TYPE_GET_CFG)) { /* Get lora modem configuration parameters */
@@ -109,22 +107,23 @@ void work_uart_data_proc_handler(struct k_work *item)
     } else {
         atomic_set(&atomic_cur_state, STATE_IDLE);
     }
+    uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
 }
 
 
 _Noreturn void common_task(void)
 {
     volatile int32_t ret = 0;
-    struct print_data_elem_s print_data = {0};
-
     struct lora_modem_config lora_cfg = {
       .tx = false,
       .frequency = atomic_get(&atomic_freq),
       .bandwidth = BW_125_KHZ,
       .datarate = atomic_get(&atomic_sf),
-      .preamble_len = 8,
+      .preamble_len = 12,
       .coding_rate = CR_4_5,
-      .tx_power = 0
+      .tx_power = 20,
+      .fixed_len = true,
+      .payload_len = RADIO_BUF_LEN,
     };
     const struct device *lora_dev;
     const struct device *uart_dev;
@@ -166,68 +165,77 @@ _Noreturn void common_task(void)
 
 
     while(1) {
-        if (atomic_cas(&atomic_cur_state, STATE_RECV, STATE_IDLE)) { /* This is start state */
+        switch (atomic_get(&atomic_cur_state)) {
+            /* This is start state */
+            case STATE_RECV:
+                /* Start UART receive */
+                lora_recv_async(lora_dev, lora_receive_cb, lora_rx_error_timeout_cb);
+                atomic_cas(&atomic_cur_state, STATE_RECV, STATE_IDLE);
+                break;
 
-            /* Start UART receive */
-            uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            lora_recv_async(lora_dev, lora_receive_cb, lora_rx_error_timeout_cb);
+            case STATE_TRANSMIT:
+                /* Receive was stopped into callback function */
+                lora_cfg.tx = true;
+                lora_config(lora_dev, &lora_cfg);
+                k_sleep(K_MSEC(300));
+                lora_send(lora_dev, radio_buf_tx, RADIO_BUF_LEN);
+                lora_recv_async(lora_dev, lora_receive_cb, lora_rx_error_timeout_cb); /* Restart receive */
+                atomic_cas(&atomic_cur_state, STATE_TRANSMIT, STATE_RECV);
+                break;
 
-        } else if (atomic_cas(&atomic_cur_state, STATE_TRANSMIT, STATE_IDLE)) {
+            case STATE_PER_MEAS:
+                /* Start UART receive */
+                per_meas(lora_dev, &lora_cfg, uart_dev);
+                /* Change currently state on STATE_RECV if it still equals STATE_PER_MEAS
+                 * Else do nothing*/
+                atomic_cas(&atomic_cur_state, STATE_PER_MEAS, STATE_RECV);
+                break;
 
-            /* Receive stopped into callback function */
-            lora_cfg.tx = true;
-            lora_config(lora_dev, &lora_cfg);
-            lora_send(lora_dev, radio_buf_tx, RADIO_BUF_LEN);
-            lora_recv_async(lora_dev, lora_receive_cb, lora_rx_error_timeout_cb); /* Restart receive */
-            atomic_cas(&atomic_cur_state, STATE_TRANSMIT, STATE_RECV);
+            /* Get modem configuration
+             * After execution this case will be started receive */
+            case STATE_GET_CFG:
+                print_modem_cfg(uart_dev, &lora_cfg);
+                atomic_cas(&atomic_cur_state, STATE_GET_CFG, STATE_RECV);
+                break;
 
-        } else if (atomic_cas(&atomic_cur_state, STATE_START_PER_MEAS, STATE_PER_MEAS_RUN)) {
+            /* Increment on 100 kHz modem frequency
+             * After execution this case will be started receive */
+            case STATE_INCR_FREQ:
+                incr_decr_modem_frequency(lora_dev, &lora_cfg, true, uart_dev);
+                atomic_cas(&atomic_cur_state, STATE_INCR_FREQ, STATE_RECV);
+                break;
 
-            /* Start UART receive */
-            uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            per_meas(lora_dev, &lora_cfg, uart_dev, uart_buf_tx);
-            /* Change currently state on STATE_IDLE if it still equals STATE_PER_MEAS_RUN
-             * Else do nothing*/
-            atomic_cas(&atomic_cur_state, STATE_PER_MEAS_RUN, STATE_IDLE);
+            /* Decrement on 100 kHz modem frequency
+             * After execution this case will be started receive */
+            case STATE_DECR_FREQ:
+                incr_decr_modem_frequency(lora_dev, &lora_cfg, false, uart_dev);
+                atomic_cas(&atomic_cur_state, STATE_DECR_FREQ, STATE_RECV);
+                break;
 
-        } else if (atomic_cas(&atomic_cur_state, STATE_GET_CFG, STATE_IDLE)) {
+            /* Set modem frequency
+             * After execution this case will be started receive */
+            case STATE_SET_FREQ:
+                change_modem_frequency(lora_dev, &lora_cfg, atomic_get(&atomic_freq), uart_dev);
+                atomic_cas(&atomic_cur_state, STATE_SET_FREQ, STATE_RECV);
+                break;
 
-            /* Start UART receive */
-            uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            print_modem_cfg(uart_dev, &lora_cfg);
+            /* Set modem datarate value
+             * After execution this case will be started receive */
+            case STATE_SET_SF:
+                change_modem_datarate(lora_dev, &lora_cfg, atomic_get(&atomic_sf), uart_dev);
+                atomic_cas(&atomic_cur_state, STATE_SET_SF, STATE_RECV);
+                break;
 
-        } else if (atomic_cas(&atomic_cur_state, STATE_INCR_FREQ, STATE_IDLE)) {
+            /* For abort PER measurement
+             * After execution this case will be started receive */
+            case STATE_STOP:
+                stop_session(lora_dev, uart_dev);
+                atomic_cas(&atomic_cur_state, STATE_STOP, STATE_RECV);
+                break;
 
-            /* Start UART receive */
-            uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            incr_decr_modem_frequency(lora_dev, &lora_cfg, true, uart_dev, uart_buf_tx);
-
-        } else if (atomic_cas(&atomic_cur_state, STATE_DECR_FREQ, STATE_IDLE)) {
-
-            /* Start UART receive */
-            uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            incr_decr_modem_frequency(lora_dev, &lora_cfg, false, uart_dev, uart_buf_tx);
-
-        } else if (atomic_cas(&atomic_cur_state, STATE_SET_FREQ, STATE_IDLE)) {
-
-            /* Start UART receive */
-            uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            change_modem_frequency(lora_dev, &lora_cfg, atomic_get(&atomic_freq), uart_dev, uart_buf_tx);
-
-        } else if (atomic_cas(&atomic_cur_state, STATE_SET_SF, STATE_IDLE)) {
-
-            /* Start UART receive */
-            uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            change_modem_datarate(lora_dev, &lora_cfg, atomic_get(&atomic_sf), uart_dev, uart_buf_tx);
-
-        } else if (atomic_cas(&atomic_cur_state, STATE_STOP, STATE_IDLE)) {
-
-            /* Start UART receive */
-            uart_rx_enable(uart_dev, uart_buf_rx, UART_RX_BUF_LEN, TIMEOUT);
-            stop_session(lora_dev, uart_dev, uart_buf_tx);
-
-        } else {
-            k_sleep(K_MSEC(10));
+            default:
+                k_sleep(K_MSEC(10));
+                break;
         }
     }
 }

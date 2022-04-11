@@ -134,15 +134,14 @@
 /home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir
 /home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/clock_control/CMakeFiles/edit_cache.dir
 /home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/clock_control/CMakeFiles/rebuild_cache.dir
-/home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/console/CMakeFiles/drivers__console.dir
-/home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/console/CMakeFiles/edit_cache.dir
-/home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/console/CMakeFiles/rebuild_cache.dir
 /home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/dma/CMakeFiles/drivers__dma.dir
 /home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/dma/CMakeFiles/edit_cache.dir
 /home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/dma/CMakeFiles/rebuild_cache.dir
 /home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir
 /home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/gpio/CMakeFiles/edit_cache.dir
 /home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/gpio/CMakeFiles/rebuild_cache.dir
+/home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/pinmux/CMakeFiles/edit_cache.dir
+/home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/pinmux/CMakeFiles/rebuild_cache.dir
 /home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/spi/CMakeFiles/drivers__spi.dir
 /home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/spi/CMakeFiles/edit_cache.dir
 /home/rts/tmp/projects/beacon_project_rzd/service_device/app/cmake-build-debug/zephyr/drivers/spi/CMakeFiles/rebuild_cache.dir
